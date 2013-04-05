@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FLV/F4V/SWF-spiller</title>
+
+<script type='text/javascript' src='swfobject.js'></script>
+
+<style type="text/css">
+body{
+	margin: 0;
+}
+#spillWrap{
+	width: 640px; 
+	height: 500px; 
+	margin: auto; 
+	border: 1em solid black; 
+	overflow: hidden; 
+	background-color: #000000; 
+}/*
+#player{
+	width: 640px; 
+	height: 500px;
+	margin: auto; 
+	background-color: #000000; 
+}*/
+</style>    
+</head>
+<body>
+<div id="spillWrap">
+    <div id='player'>The Jump- Innlevering After Effects</div>
+    
+    <script type='text/javascript'>
+      var so = new SWFObject('player.swf','ply','640','500','9','#ffffff');
+      so.addParam('allowfullscreen','true');
+      so.addParam('allowscriptaccess','always');
+      so.addParam('wmode','opaque');
+      so.addVariable('file','AEAnimasjonFerdig.f4v');
+      so.write('player');
+    </script>
+</div><!--end spillWrap//-->
+</body>
+</html>
+
