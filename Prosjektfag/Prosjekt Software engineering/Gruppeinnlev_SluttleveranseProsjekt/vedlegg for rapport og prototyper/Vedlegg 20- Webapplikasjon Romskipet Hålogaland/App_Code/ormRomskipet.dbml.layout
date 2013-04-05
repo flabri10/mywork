@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 9.875" name="ormRomskipet">
+  <DataContextMoniker Name="/ormRomskipetDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7b4d2f3e-5733-4661-80f6-a12e9c82d018" absoluteBounds="1.125, 5.375, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Administrator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8abe3806-22cf-4448-87fd-8def161db184" absoluteBounds="1.1400000000000006, 5.8350000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e54de4d9-f5f9-45e8-92ad-7c40d53b9f06" absoluteBounds="6.625, 6.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Produkt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba66bda3-470d-4839-a552-8f11d5193276" absoluteBounds="6.6400000000000006, 6.9600000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b203002-c808-4605-ba2e-ea97be9dbd14" absoluteBounds="9.25, 1.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/ormRomskipetDataContext/AktivitetPåmelding" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f75afda0-1679-4217-ba34-6451ff6db28c" absoluteBounds="9.265, 2.0850000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f8852de-842d-47a0-abf3-47cc0d3cea59" absoluteBounds="6.625, 1.625, 2, 1.9631982421874992">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Bruker" />
+      <nestedChildShapes>
+        <elementListCompartment Id="868acd8a-2c34-4f0d-8d41-2f6480e96470" absoluteBounds="6.6400000000000006, 2.0850000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68578acb-d879-4a4b-9952-4ed9372194da" absoluteBounds="3.75, 5.375, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Foreleser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5b7ceaa-dd42-4722-b22b-d6a4c73c4cc6" absoluteBounds="3.7650000000000006, 5.8350000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa52a44d-a834-4f89-af0b-1e6d0d02035f" absoluteBounds="3.75, 3.375, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/ormRomskipetDataContext/ForeleserPåmelding" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67c8d01c-e364-4f42-bb5e-28fe27062112" absoluteBounds="3.7650000000000006, 3.8350000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3dc939cb-6ebc-47e5-a8f6-e57deaca6aa5" absoluteBounds="1.125, 1.625, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Kurs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="668abcea-07a3-4762-b528-704a1a610f2f" absoluteBounds="1.1400000000000006, 2.0850000000000009, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e2268823-47f1-41e7-a72e-a3ea09df6c18" absoluteBounds="3.75, 1.625, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/ormRomskipetDataContext/KursPåmelding" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9fd8d11d-bb8d-4983-9f65-3343be167b43" absoluteBounds="3.7650000000000006, 2.0850000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.625 : 2.31814697265625); (9.25 : 2.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ormRomskipetDataContext/Bruker/Bruker_AktivitetPåmelding" />
+      <nodes>
+        <classShapeMoniker Id="4f8852de-842d-47a0-abf3-47cc0d3cea59" />
+        <classShapeMoniker Id="7b203002-c808-4605-ba2e-ea97be9dbd14" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.75 : 5.375); (4.75 : 4.7612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ormRomskipetDataContext/Foreleser/Foreleser_ForeleserPåmelding" />
+      <nodes>
+        <classShapeMoniker Id="68578acb-d879-4a4b-9952-4ed9372194da" />
+        <classShapeMoniker Id="aa52a44d-a834-4f89-af0b-1e6d0d02035f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.625 : 2.31814697265625); (5.75 : 2.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ormRomskipetDataContext/Bruker/Bruker_KursPåmelding" />
+      <nodes>
+        <classShapeMoniker Id="4f8852de-842d-47a0-abf3-47cc0d3cea59" />
+        <classShapeMoniker Id="e2268823-47f1-41e7-a72e-a3ea09df6c18" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 3.96235270182292); (3.75 : 3.96235270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ormRomskipetDataContext/Kurs/Kurs_ForeleserPåmelding" />
+      <nodes>
+        <classShapeMoniker Id="3dc939cb-6ebc-47e5-a8f6-e57deaca6aa5" />
+        <classShapeMoniker Id="aa52a44d-a834-4f89-af0b-1e6d0d02035f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 2.31814697265625); (3.75 : 2.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ormRomskipetDataContext/Kurs/Kurs_KursPåmelding" />
+      <nodes>
+        <classShapeMoniker Id="3dc939cb-6ebc-47e5-a8f6-e57deaca6aa5" />
+        <classShapeMoniker Id="e2268823-47f1-41e7-a72e-a3ea09df6c18" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d27571ff-5a22-443b-adbf-3de847bfe322" absoluteBounds="3.75, 7.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Bilder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a6eef83-024e-49ef-87cd-344f544a2092" absoluteBounds="3.7650000000000006, 8.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ffc959e-bea1-47bc-9932-a0a94c0c18d6" absoluteBounds="6.625, 4.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Ordrelinje" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38f985c4-8558-4bfa-95e8-254c5ab4ea47" absoluteBounds="6.64, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.625 : 3.5881982421875); (7.625 : 4.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ormRomskipetDataContext/Bruker/Bruker_Ordrelinje" />
+      <nodes>
+        <classShapeMoniker Id="4f8852de-842d-47a0-abf3-47cc0d3cea59" />
+        <classShapeMoniker Id="0ffc959e-bea1-47bc-9932-a0a94c0c18d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.625 : 6.5); (7.625 : 5.89589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ormRomskipetDataContext/Produkt/Produkt_Ordrelinje" />
+      <nodes>
+        <classShapeMoniker Id="e54de4d9-f5f9-45e8-92ad-7c40d53b9f06" />
+        <classShapeMoniker Id="0ffc959e-bea1-47bc-9932-a0a94c0c18d6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d2846868-9a4e-4098-8355-0af5d0c86dab" absoluteBounds="1.125, 7.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Nyhet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b5e4fe3-4b3e-40cf-bc4d-f87d008e0b33" absoluteBounds="1.1400000000000001, 8.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5963b1b-4351-4899-8737-ad1e3468c975" absoluteBounds="9.25, 3.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ormRomskipetDataContext/Aktivitet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3b05456-e508-4d0b-9639-c7e193f5fcdc" absoluteBounds="9.265, 4.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.25 : 3.875); (10.25 : 3.0112939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ormRomskipetDataContext/Aktivitet/Aktivitet_AktivitetPåmelding" />
+      <nodes>
+        <classShapeMoniker Id="b5963b1b-4351-4899-8737-ad1e3468c975" />
+        <classShapeMoniker Id="7b203002-c808-4605-ba2e-ea97be9dbd14" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

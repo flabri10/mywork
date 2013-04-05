@@ -1,0 +1,1359 @@
+﻿* {
+    margin:0; 
+    padding:0;
+    font-family: 'PT Sans', sans-serif;
+    color:#444444;
+    text-decoration:none;
+}
+
+html, body {
+    background-color:#e6e6e6;
+    height: 100%;
+}
+
+/* HEADER */
+#header {
+    background:url('../gfx/headerBg.png');
+    width:100%;
+}
+
+#headerWrapper {
+    margin:0 auto;
+    width:940px;
+    height:196px;
+    position:relative;
+    z-index:97;
+}
+
+#logo {
+    width:86px;
+    height:112px;
+    float:left;
+    margin:40px 0 0 40px;
+}
+
+#logo img {
+    border:0;   
+}
+
+#headerExtended {
+    background:url('../gfx/headerBg.png');
+    width:100%;
+    height:400px;
+    position:relative;
+}
+
+#headerExtendedWrapper {
+    width:940px;
+    height:400px;
+    position:relative;
+    margin:0 auto;
+}
+
+#headerIllustrasjon {
+    background:url('../gfx/headerIllustrasjon.png');
+    width:618px;
+    height:293px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index:1;
+}
+
+#headerText {
+    width:560px;
+    position:absolute;
+    top:70px;
+    z-index:2;
+}
+
+#headerText p {
+    color:#fff;
+    font-size:12px;
+    margin-bottom:10px;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+/* END HEADER */
+
+/* TOPNAV */
+#topNav {
+    float:right;
+    margin-top:50px;
+}
+
+#topNav ul {
+    list-style:none;
+}
+
+#topNav ul li {
+    float:left;
+}
+
+#topNav a {
+    color:#c8cccc;
+    font-size:12px;
+    margin-left:10px;
+    padding-right:10px;
+    border-right:1px solid #c8cccc;
+}
+
+#topNav a:hover {
+    color:#f1f1f1;
+}
+
+#lbtnLoggInn {
+    border-right:0 !important;
+    padding-right:0 !important;
+}
+
+/* END TOPNAV */
+
+/* MAINNAV */
+
+#mainNav {
+    background:url('../gfx/mainNavBg.png');
+    border-bottom:3px solid #323f45;
+    float:right;
+    position:absolute;
+    right:0;
+    top:80px;
+}
+
+#mainNav ul {
+    list-style:none;
+    float:left;
+}
+
+#mainNav li {
+    position:relative;
+}
+
+#mainNav ul ul {
+    position:absolute;
+    display:none;
+}
+
+#mainNav ul li ul {
+    width:200px;
+}
+
+
+#mainNav ul li:hover ul {
+    display:block;
+    background:url('../gfx/mainNavBg.png');
+}
+
+#mainNav a {
+    display:block;
+    padding:15px;
+    color:#e6e6e6;
+}
+
+#mainNav a:hover {
+    background:url('../gfx/mainNavBgHover.png');
+}
+
+/* END MAINNAV */
+
+/* MAINCONTENT */
+#mainContent {
+    margin:0 auto;
+    width:940px;
+    padding-top:30px;
+    position:relative;
+}
+
+.clearfix {
+    clear:both;
+}
+
+h1 {
+    color:#fff;
+    font-size:55px; 
+}
+
+h2, h3 {
+    color:#48a2cc;
+    text-decoration:none !important;
+}
+
+h2 {
+    font-size:50px;
+    margin-bottom:5px;
+}
+
+h3 {
+    font-size:17px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+#mainContent p {
+    font-size:13px;
+    padding-bottom:15px;
+}
+
+#mainContent img {
+    border:none;
+    padding:8px;
+    background-color:#fff;
+    margin-bottom:10px;
+}
+
+#mainContent p.intro {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight:bold;
+    font-size:13px;
+}
+
+a.lesMer {
+    font-size:13px;
+}
+
+a.lesMer:hover {
+    text-decoration:underline;
+}
+
+#sosialeWrapper {
+    width:50px; 
+    position:absolute;
+    right:-90px;
+    top:20px;
+}
+
+#sosialeWrapper img {
+    display:block;
+    padding: 0 !important;   
+    border:0;
+}
+
+/* UNIQUE INDEX */
+
+#slider {
+    float:left;
+}   
+
+.linkButton {
+    display:block;
+    padding:7px;
+    color:#444444;
+    float:left;
+    margin-top:13px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #ececec;
+}
+
+.linkButton a {
+    font-size:14px;
+    text-decoration:none;   
+}
+
+.linkButton#nordlysLink {
+    margin-top:0;   
+}
+
+.linkButton:hover {
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2e2e2));
+    background:-moz-linear-gradient(top,  #fff,  #e2e2e2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#e2e2e2');
+}
+
+
+.infoBoksIndex {
+    padding:5px 12px;
+    width:354px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #dcdcdc;
+    float:right;
+    margin-bottom:10px;
+}
+
+.infoBoksIndex p  {
+    color:#919191 !important;
+
+}
+
+/* END UNIQUE INDEX */
+
+/* UNIQUE SE & GJØRE */
+
+p.textWrap {
+    width:618px;
+}
+
+#infoContainer {
+    float:right;
+    width:360px;
+    padding: 0 10px 5px 10px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #dcdcdc;
+    margin-left:10px;
+}
+
+#infoContainer ul {
+     margin-left:15px;
+     list-style-type:circle;
+     font-size:14px;
+     margin-bottom:10px;
+     font-size:13px;
+}
+
+/* END UNIQUE SE & GJÆRE */
+
+/* UNIQUE UTDANNING */  
+
+.utdanningsContainer, .prosjektBoks {
+    width:910px;
+    position:relative;
+    padding:15px;
+    margin-bottom:10px;
+    float:left;
+    display:block;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #ececec;
+}
+
+.divider {
+    width:940px;
+    height:1px;
+    background-color:#c4c3c3;
+    float:left;  
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+#leftContainer {
+    width:460px;
+    float:left;
+   
+}
+#rightContainer {
+    width:460px;
+    float:right; 
+}
+
+.prosjektBoksBilde {
+    float:left;
+    margin-right:10px;
+    width:165px;
+    height:115px;    
+}
+.prosjektBoksBilde img {
+    border:1px solid #c4c3c3; 
+    width:165px;
+}
+
+.prosjektBoks h4 {
+    font-size:14px;
+    color:#48a2cc;
+}
+
+.lesMerProsjekt {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    color:#444444;
+    font-size:12px;     
+}
+
+/* END UNIQUE UTDANNING */
+
+/* UNIQUE FORSKNING */
+ul.alomarList {
+    list-style-type:circle;
+    font-size:13px;
+    margin-left:15px;
+}
+
+ul.alomarList li {
+    margin-bottom:5px;   
+}
+
+/* UNIQUE AKTUELT */
+#aktueltContainer {
+    width:920px;
+    padding:10px;
+    position:relative;
+    margin-bottom:10px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #ececec;
+    float:left;
+}
+
+#aktueltContainer a {
+    margin-left:17px;
+    font-size:14px;
+}
+
+#aktueltContainer a:hover {
+    text-decoration:underline;
+}
+
+#aktueltContainer h3 {
+    margin-top:0px; 
+    margin-bottom:0px;
+}
+
+#aktueltContainer p, #aktueltContainer h3 {
+    width:720px;
+    float:right;
+}
+
+#aktueltContainer img {
+    border:1px solid #ececec;
+    float:left;
+    padding:0;
+    margin:0;
+}
+
+.date {
+    position:absolute;
+    right:0;
+    bottom:0;
+    color:#817f7f !important;
+    width:80px;
+    font-size:13px;
+}
+
+/* END UNIQUE AKTUELT */
+
+/* UNIQUE ROMFART */
+.nameList {
+    width:280px;
+    float:left;
+    margin-right:31px;
+}
+
+.nameList p {
+    text-decoration:underline;
+}
+
+.nameList#border {
+    border-right:1px solid #c4c3c3;
+}
+
+.nameList#last {
+    margin-top:21px;
+}
+
+.nameList ul {
+    list-style:none;
+    margin-bottom:13px;
+}
+
+.nameList ul li {
+    font-size:13px;
+}
+
+
+.nameList ul li.title {
+    color:#817f7f;
+}
+
+/* END UNIQUE ROMFART */
+
+/* UNIQUE INFO */
+#tekstContainer {
+ float:left;
+ width:480px;
+   
+}
+
+#tekstContainer ul {
+    margin:0 0 20px 15px;
+    list-style-type:circle;
+}
+
+#tekstContainer li {
+    font-size:13px;
+    color:#444444;
+}
+
+#kartContainer {
+    width:425px;
+    padding:11px;
+    background-color:#fff;
+    float:right;
+}
+
+/* END UNIQUE INFO */
+/* END MAINCONTENT */
+
+
+/* FOOTER */
+#footer {
+	width: 940px;
+	height: 80px;
+	margin:0 auto;
+	background:url('../gfx/headerBg.png');
+	margin-top:10px;
+	clear:both;
+}
+
+.footerboks {
+	width: 311px;
+	height: 54px;
+	float: left;
+    margin-top:15px;
+    border-right:1px solid #f1f1f1;
+}
+
+#noBorder {
+    border-right:none;
+}
+
+.footerboks p, .footerboks a {
+    color:#e6e6e6;
+    font-size:12px;
+    margin-left:66px;
+}
+
+
+.footerboks a {
+    display:block;
+    text-decoration:none;
+}
+
+.footerboks a:hover {
+    text-decoration:underline;
+}
+
+/* END FOOTER */
+
+/* UNIQUE KONTAKT */
+#KontaktSkjemaContainer {
+    width: 450px;
+    height: 660px;
+    float: left;
+}
+
+#kontaktInfo {
+    width: 460px;
+    height: 620px;
+    background-color: #fff;
+    float: right;
+    text-align:center;
+}
+
+.kontaktContainer {
+    float:left;
+    width:230px;
+    height:100px;
+}
+
+#cphMainContent_txtMelding {
+    width:430px;
+    height:150px;
+    font-size:13px;
+}
+
+
+/* KURS */
+.kursHead td, .nyhetsHead td, .aktivitetsHead td {
+    background-color:#172936;
+    text-align:center;
+    padding:5px;
+    font-size:14px;
+    color:#fff;
+}
+
+.kursHead td {
+    width:192px;
+}
+
+.nyhetsHead td {
+    width:235px;
+}
+
+.aktivitetsHead td {
+    width:188px;
+}
+
+.row1 td, .row2 td {
+    text-align:center;
+    padding:5px;
+    font-size:13px;
+}
+
+.row1 td img, .row2 td img, #divNyttKurs img, #divAdminInfo img {
+    padding:0;
+    margin:0;
+    background-color:transparent;
+    border:none;
+}
+
+.row1 td {
+    background-color:#eeeeee;
+}
+
+.row2 td {
+    background-color:#fff;
+}
+
+.row1 a, .row2 a, #divNyttKurs a, #divNyNyhet a {
+    color:#48a2cc;
+    text-decoration:none;
+}
+
+#divNyttKurs {
+    float:right;
+    right:0;
+    margin-top:4px;
+    position:absolute;
+}
+
+#divNyttKurs a, #divNyNyhet a {
+    font-size:13px;
+}
+
+#divNyttKurs img, #divNyNyhet img {
+    margin-right:5px !important;
+}
+
+.row1 a:hover, .row2 a:hover {
+    text-decoration:underline;
+}
+
+#divKursNavigasjon {
+    height:27px;  
+    margin-left:2px;
+    margin-top:5px;
+}
+
+#divNyNyhet {
+    float:right;
+    margin-top:10px;
+}
+
+.navigasjonsFane {
+    margin-right:10px;
+    background-color:#172936;
+    float:left;
+    font-size:12px;
+    opacity:0.6;
+}
+
+.navigasjonsFane a {
+    text-decoration:none;
+    color:#fff;
+    display:block;
+    padding:5px 10px;
+}
+
+.navigasjonsFane:hover {
+    opacity:1;
+    cursor:pointer;
+}
+
+#kursInfo {
+    width:310px;
+    padding:10px;
+    padding-top:0px;
+    margin-top:10px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #dddddd;
+    float:right;
+    clear:right;
+}
+
+#kursInfo p {
+    padding-bottom:5px;
+}
+
+#kursInfo ul {
+    list-style:none;
+}
+
+#kursInfo li {
+    color:#444444;
+    font-size:13px;
+}
+
+#divForeleserListe {
+    background-color:#fff;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding:10px;
+    padding-top:5px;
+}
+
+#ulForeleserliste li {
+    list-style:none;
+}
+
+
+#divAdminInfo {
+    width:310px;
+    padding:0 10px 10px 10px;
+    margin-top:35px;
+    margin-left:20px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #dddddd;
+    float:right;
+}
+
+#divAdminInfo img {
+    margin-right:10px;
+}
+
+#deltakerListe {
+    width:300px;
+    padding: 0 15px 15px 15px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #dddddd;
+    position:absolute;
+    margin-top:35px;
+    right:345px;
+    display:none;
+}
+
+#deltakerListe ul {
+    list-style:none;
+}
+
+#deltakerListe li {
+    font-size:14px;
+    color:#444444;
+    float:left;
+    width:150px;
+}
+
+#deltakerListe li li {
+    font-size:12px;
+    color:#817f7f;
+}
+
+#deltakerListe li li:last-child {
+    margin-bottom:10px;
+}
+
+#btnVisDeltakerListe:hover {
+    cursor:pointer;
+}
+
+#btnClose {
+    width:18px;
+    height:18px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:99;
+}
+
+.imgNoStyle {
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    background-color:transparent !important;
+}
+
+#btnClose img {
+    opacity:0.6;
+}
+
+#divPointer {
+    position:absolute;
+    right:-13px;
+    top:14px;
+}
+
+#btnClose img:hover {
+    opacity:1;
+    cursor:pointer;
+}
+
+#kursBeskrivelseLeft {
+    width:600px;
+}
+
+#kursInfoRight {
+    width:330px;
+    float:right;   
+}
+
+#cphMainContent_ltbnSendTilProfil {
+    font-size:13px;
+    text-decoration:none;
+}
+
+.success {
+    color:#009d00!important;
+    margin:10px 0 5px 0 !important;
+    padding:0 !important;
+    font-size:15px !important;
+}
+
+.failure {
+    color:Red;
+    margin:10px 0 5px 0 !important;
+    padding:0 !important;   
+}
+
+
+.lesMerOnclick {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    color:#444444;
+    font-size:12px;
+}
+
+.lesMerOnclick:hover {
+    color:#48a2cc;   
+}
+
+.lesMerOnclickSkole {
+    position:absolute;
+    bottom:5px;
+    left:15px;
+    color:#444444;
+    font-size:12px;
+}
+
+.lesMerOnclickSkole:hover {
+    color:#48a2cc;   
+}
+
+.lesMerOnclickProsjekt {
+    color:#444444;
+    font-size:12px;
+}
+
+.lesMerOnclickProsjekt:hover {
+    color:#48a2cc;   
+}
+
+.box {
+    width:735px;
+    float:right;
+}
+
+/* NYTT KURS */
+
+.tblTabellSkjema td {   
+    font-size:13px;
+    color:#444444;
+}
+
+.tblTabellSkjema select {
+    margin-bottom:10px;
+}
+
+.brukerInput {
+    padding:5px; 
+    width:200px;
+    height:15px;
+    margin-bottom:5px;
+    border:1px solid #dddddd;
+}
+
+.btnSkjemaKnapp {
+    border:1px solid #dddddd;
+    background-color:#48a2cc;
+    padding:5px 5px;
+    font-size:13px;
+    color:#fff;
+    
+}
+
+.btnSkjemaKnapp:hover {
+    background-color:#f1f1f1;
+    color:#454545;
+    cursor:pointer;   
+}
+
+.btnSkjemaKnappNettbutikk {
+    border:1px solid #dddddd;
+    background-color:#48a2cc;
+    padding:5px 5px;
+    font-size:13px;
+    color:#fff;
+    position:absolute;
+    bottom:20px;
+    left:18px; 
+}
+
+.btnSkjemaKnappNettbutikk:hover {
+    background-color:#f1f1f1;
+    color:#454545;
+    cursor:pointer;   
+}
+
+#cphMainContent_txtKursBeskrivelse, #cphMainContent_txtTilleggsInformasjon, #cphMainContent_txtSamarbeidspartnere, #cphMainContent_txtNyhetsIngress, #cphMainContent_txtNyhetsBrødtekst, #cphMainContent_txtProduktBeskrivelse, #cphMainContent_txtAktivitetBeskrivelse{
+    width:500px;
+    height:120px;
+    font-size:13px;
+}
+
+#cphMainContent_txtValgteForelesere {
+    height:100px;
+    font-size:13px;
+}
+#cphMainContent_txtKursBeskrivelse {
+    height:180px;
+}
+
+.question {
+    font-style:italic;
+}
+
+#cphMainContent_vsKursSummary ul {
+
+    padding:5px;
+}
+
+#cphMainContent_vsKursSummary ul li {
+    color:Red;
+    list-style:none;
+}
+
+#cphMainContent_lbtnLeggTilForeleser {
+    margin-left:10px;
+    font-size:13px;
+}
+/* LOGG INN */
+
+#divRegistrerContainer {
+    width:200px;
+    float:right;
+    margin-right:150px;
+    border-left:1px solid #c4c3c3;
+    padding-left:150px;
+
+}
+
+#divLoggInnContainer {
+    float:left;
+    margin-left:100px;
+    width:300px;
+}
+
+#cphMainContent_btnLoggInn {
+    margin-bottom:10px;
+}
+
+#divStatus {
+    padding:5px;
+}
+
+#divStatus ul {
+    margin-bottom:7px;   
+}
+#divStatus li {
+   list-style:none;
+   font-size:14px;
+   list-style-type:circle;
+   margin-left:10px;
+}
+
+/* NETTBUTIKK */
+#divHandlevogn
+{
+    position:absolute;
+    right:40px;
+    top:53px;
+}
+
+#divHandlevogn a {
+    float:right;
+    margin-top:-10px;
+}
+
+#divHandlevogn a img {
+    margin-right:5px !important; 
+}
+
+.produktBilder
+{
+    height: 160px;    
+}
+
+#divProduktContainer
+{
+    margin-bottom: 50px;    
+    position:relative;
+}
+
+.divProduktBoks
+{
+    width: 270px;
+    height: 370px;
+    background-color: White;    
+    margin:15px 15px 0 0;
+    float: left;
+    position:relative;
+    padding-left:20px;
+}
+
+
+
+.divProduktBoks .pPris {
+    font-size:18px !important;
+    position:absolute;
+    bottom:55px;
+}
+
+#divProduktContainer ul
+{
+    padding: 0;
+    margin-left: 20px;
+    font-size: 12px;      
+    list-style: none;  
+    margin-bottom: 20px;
+}
+
+#tblHandlekurv td {
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    margin-bottom:10px;
+    padding:15px;
+    width:235px;
+    text-align:center;
+}
+
+#tblHandlekurv td img {
+    width:150px;
+    padding:0 !important;
+    float:none !important;
+    background-color:transparent;  
+}
+
+.handleKurvHead td {
+    background:transparent !important;
+    padding:0 !important;
+    font-size:14px !important;
+}
+
+#tblHandlekurv .last img {
+    width:13px !important;   
+    opacity:0.4;
+}
+
+#tblHandlekurv .last img:hover {
+    opacity:1;
+}
+
+
+#handleKurvNav {
+    position:absolute;
+    bottom:20px;
+    right:11px;
+}
+
+#produktSumHandlekurv{
+    background:#fff;
+    padding:15px;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    width:192px;
+    margin-left:496px;   
+    text-align:center;
+}
+
+
+/*-------------------------HISTORYCSS--------------------------*/
+
+#historieRange{
+    width:360px;
+    height:30px;
+    margin: 20px 0 0 0;
+}
+
+#tidslinje {
+ background-image:url(../gfx/historie_tidslinje.png);
+ width:360px;
+ height:30px;
+ margin-bottom:20px;
+ 
+}
+.historieContainer{
+    float:left;
+    padding: 0 10px 5px 10px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #dcdcdc;
+    margin-left:10px;
+    position:relative;
+}
+
+.historieContainer {
+    width:360px;
+}
+
+#imgHistorie {
+    width:500px; 
+    float:right;
+}
+
+/*--------------------** END HISTORYCS ** -----------------------*/
+
+
+/*-----------------** FLOATS & CLEARS **----------*/
+.floatLeft { float:left; }
+.floatRight { float:right; }
+.clearBoth { clear:both; }
+.clearLeft { clear:left; }
+.clearRight { clear:right; }
+
+/*---------------------------------------------------------------------
+----------------------- FORSIDESLIDER -----------------------------------
+---------------------------------------------------------------------*/
+#sliderWrapper {
+    position:relative;
+    background:#fff;
+}
+#slider {
+    float:left;
+    background:#fff;
+    padding:5px;
+}  
+
+#slider ul li {float:left; list-style:none; position:relative; }
+#slider ul li a {
+    color:#48a2cc;
+}
+#slider ul li a:hover {
+    color:#417993;
+}
+
+#slider ul li a.neste
+ {
+    position:absolute;
+     background:#fff;
+     right:0;
+     padding-bottom:2px;
+     padding-left:3px;
+     text-decoration:none;
+     border-radius:0 0 0 5px;
+     
+}
+#slider ul li a.forrige
+{
+    position:absolute;
+    left:0px;
+    background:#fff;
+      padding-bottom:2px;
+     padding-right:3px;
+     text-decoration:none;
+     border-radius:0 0 5px 0;
+}
+#slider ul li a.restart
+{
+     position:absolute;
+     background:#fff;
+     right:0;
+     padding-bottom:2px;
+     padding-left:3px;
+     text-decoration:none;
+      border-radius:0 0 0 5px;
+}
+
+
+#slider img {
+    width:515px;
+    height:277px;
+    margin:0 !important;
+    padding: 0 !important;
+} 
+
+/* ADMIN */
+.new {
+    float:right;
+    right:0;
+    margin-top:-22px;
+    position:absolute;   
+}
+
+.new img {
+    padding:0;
+    margin:0;
+    background-color:transparent;
+    border:none;
+    margin-right:5px !important;
+}
+
+.new a {
+    color:#48a2cc;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.dividerAdmin {
+    width:940px;
+    height:1px;
+    border-bottom:1px solid #fafafa;
+    background-color:#a1a1a1;
+    margin:20px 0 15px 0;
+}
+
+/* ADMIN - GALLERI */
+#adminBildeGalleri img {
+
+}
+
+.adminBildeContainer {
+    float:left !important;
+    margin:5px;
+    position:relative;
+}
+
+.adminBildeContainer img {
+    width:162px !important;
+    height:110px !important;
+}
+
+.adminBildeContainer p {
+    padding:0 !important;   
+    font-size:11px !important;
+}
+
+.btnSlettBilde img {
+    width:12px !important;
+    height:12px !important;
+    position:absolute;
+    top:8px;
+    right:8px;
+    padding:3px 3px 3px 5px !important;
+    opacity:0.6;
+}
+
+.btnSlettBilde img:hover {
+    cursor:pointer;   
+    opacity:1;
+}
+
+
+/*---------------------------------------------------------------------
+----------------------- ** END FORSIDESLIDER ** -----------------------------------
+---------------------------------------------------------------------*/
+
+
+/*-------------------------HISTORYCSS--------------------------*/
+
+#historieRange{
+    width:360px;
+    height:30px;
+    margin: 20px 0 0 0;
+}
+
+#tidslinje {
+ background-image:url(../gfx/historie_tidslinje.png);
+ width:360px;
+ height:30px;
+ margin-bottom:20px;
+}
+
+.historieContainer{
+    float:left;
+    padding: 0 10px 5px 10px;
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #dcdcdc;
+    margin-left:10px;
+    position:relative;
+}
+
+.historieContainer {
+    width:360px;
+}
+
+#imgHistorie {
+    width:500px;    
+    float:right;
+}
+
+
+/*--------------------** END HISTORYCS ** -----------------------*/
+
+/*--------------------- MEDIA MED JAVASCRIPT -----------------------*/
+
+#divBilder img {
+	height:110px;
+	width:162px;
+	margin-right:10px;
+	opacity:0.9;
+	cursor:pointer;	
+}
+
+#bildeFremviser {
+    
+    height:100%;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:fixed;
+    left:0;
+    top:0;
+    display:none;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align:center;
+    z-index:99;
+    
+}
+#bildeFremviser #fokusBilde {
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    margin:auto;
+    
+}
+#divLukk {
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    margin:auto;
+    width:500px;
+    height:200px;
+    z-index:100;
+    
+}
+#divLukk img {
+    cursor:pointer;
+
+}
+#divLukk p {
+    color:#fff !important;
+    margin-top:15px;
+    position:absolute;
+    top:100%;
+    
+}
+
+.video img {
+   margin-right:6px;
+}
+
+
+/*-------------------** END MEDIA ** --------------*/

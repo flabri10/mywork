@@ -1,0 +1,11 @@
+public class Testbok
+{
+    public static void main( String [] args )
+    {
+        Bok testBok = new Bok ("Erlend Loe", "Dopler", 300);
+       
+        System.out.println("Forfatter :" + Forfatter );
+        System.out.println("Tittel :" + tittel );
+        System.out.println("Sider :" + sider );
+    }
+}

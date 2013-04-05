@@ -1,0 +1,31 @@
+@charset "utf-8";
+.overskrift {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+}
+.overskrift {
+	font-family: "Agency FB";
+}
+.overskrift {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.tekst {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.tekst {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+}
+.footer td p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.footer td p {
+	color: #999;
+}
+.footer td p {
+	color: #666;
+}
+.footer td p .footer {
+	color: #666;
+}

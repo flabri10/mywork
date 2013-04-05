@@ -1,0 +1,32 @@
+﻿<!--Kodet av Britt-Heidi Fladby-->
+<?xml version="1.0" encoding="utf-8" ?>
+<xmlFilmanmeldelseliste>
+  <filmanmeldelse>
+    <id>1</id>
+    <tittel>Skyfall</tittel>
+    <epost>flabri10@nith.no</epost>
+    <anmeldelse>Kjempe bra film med bra musikk</anmeldelse>
+    <vurdering>6</vurdering>
+  </filmanmeldelse>
+  <filmanmeldelse>
+    <id>2</id>
+    <tittel>Reisen til julestjernen</tittel>
+    <epost>britt_heidi@hotmail.com</epost>
+    <anmeldelse>nisser skal ikke være blå..</anmeldelse>
+    <vurdering>1</vurdering>
+  </filmanmeldelse>
+  <filmanmeldelse>
+    <id>3</id>
+    <tittel>Twilight</tittel>
+    <epost>123@123.no</epost>
+    <anmeldelse>not my style..</anmeldelse>
+    <vurdering>3</vurdering>
+  </filmanmeldelse>
+  <filmanmeldelse>
+    <id>4</id>
+    <tittel>Bones</tittel>
+    <epost>test@test.no</epost>
+    <anmeldelse>Spennende og bra serie</anmeldelse>
+    <vurdering>5</vurdering>
+  </filmanmeldelse>
+</xmlFilmanmeldelseliste>

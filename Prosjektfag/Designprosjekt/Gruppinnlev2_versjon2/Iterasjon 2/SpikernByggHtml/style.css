@@ -1,0 +1,598 @@
+body
+{
+    background-image:url('bilder/bg00.png');
+}
+#container
+{
+    margin:0px auto;
+
+    width: 1232px;
+}
+/*EVERYTHING WITHING TOP FROM HERE*/
+#top
+{
+    height: 115px;
+}
+#top-left-space
+{
+    float:left;
+    width: 177px;
+    height: 115px;
+}
+#top-right-space
+{
+    float:left;
+    width: 177px;
+    height: 115px;
+}
+#logo
+{
+    float:left;
+    height: 115px;
+    width:407px;
+    background-image:url('bilder/logo.png');
+}
+#menu
+{
+    float:left;
+    height: 115px;
+    width:471px;
+}
+/*EVERYTHING WITHING BANNER FROM HERE*/
+#banner
+{
+    height: 364px;
+    width: 1232px;
+}
+#left-side-space
+{
+    float: left;
+    width: 177px;
+    height: 364px;
+    /*background-color: teal;    */
+}
+#right-side-space
+{
+    float: left;
+    width: 177px;
+    height: 364px;
+}
+#banner-image
+{
+    float: left;
+    width: 878px;
+    height: 364px;
+    background-image:url('bilder/bilde2.jpg');
+
+}
+#left-side-space-top
+{
+    width: 177px;
+    height:114px;
+}
+#left-side-space-bottom
+{
+    width: 177px;
+    height:250px;
+    background-image:url('bilder/009.png');
+
+}
+#right-side-space-top
+{
+    width: 177px;
+    height:114px;
+}
+#right-side-space-bottom
+{
+    width: 177px;
+    height:250px;
+    background-image:url('bilder/bg01.png');
+}
+/*EVERYTHING WITHING HERE IS TEXT-CONTAINER*/
+#textcontainer
+{
+    margin-left: 8.2px;
+   /* width: 1232px; */
+    Height: 528px;
+    background-image:url('bilder/bg987.png');
+}
+#center
+{
+    margin:0px auto;
+    width: 976px;
+    height: 10px;
+}
+a.menu-link
+{
+    color: #909090;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.menu-link-selected
+{
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+#superbox1
+{
+    float: left; 
+    margin-left: 45px;
+    margin-top: 80px;
+    height: 200px;
+    width: 591px;
+}
+#box1
+{
+    float: left;
+    height: 195px;
+    width:  295.5px;
+}
+#box2
+{
+    float: left;
+    height: 195px;
+    width:  295.5px;
+
+}
+#box3
+{
+    float: left;
+    height: 5px;
+    width: 591px;
+    background-image:url('bilder/maindivider.png');
+}
+#superbox2
+{
+    float: left;
+    margin-top: 80px;
+    height:200px;
+    width: 306px;
+}
+#box11
+{
+    float: left;
+    height: 25px;
+    width:  306px;
+}
+#box22
+{
+    float: left;
+    height: 35px;
+    width:  306px;
+}
+#box33
+{
+    float: left;
+    height: 5px;
+    width:  306px;
+    background-image:url('bilder/walldivider.png');
+}
+#box44
+{
+    float: left;
+    height: 35px;
+    width:  306px;
+}
+#box55
+{
+    float: left;
+    height: 5px;
+    width:  306px;
+    background-image:url('bilder/walldivider.png');
+}
+#box66
+{
+    float: left;
+    height: 35px;
+    width:  306px;
+}
+#superbox3
+{
+    margin-left: 45px;
+    float: left;
+    width: 900px;
+    height: 200px;
+}
+#box111
+{
+    float: left;
+    width: 295.5px;
+    height: 100px;
+}
+#box222
+{
+    float: left;
+    width: 295.5px;
+    height: 100px;
+}
+#box333
+{
+    float: left;
+    width: 900px;
+    height: 5px;
+    background-image:url('bilder/subdivider.png');
+}
+a.header
+{
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.maintext
+{
+    float: left;
+    margin-top: 10px;
+    color: #909090;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.maintext2
+{
+    margin-top: 27.5px;
+    float: left;
+    color: #909090;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.headerwall
+{
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.arrow1
+{
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.melding1
+{
+    color: #909090;
+    font-size: 12px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.arrow2
+{
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.melding2
+{
+    color: #909090;
+    font-size: 10px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.arrow3
+{
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.melding3
+{
+    color: #909090;
+    font-size: 11px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.subtext1
+{
+    float: left;
+    margin-top: 10px;
+    color: #C7C7C7;
+    font-size: 12px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.subtext2
+{
+    float: left;
+    margin-top: 10px;
+    color: #C7C7C7;
+    font-size: 12px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.credit
+{
+    margin:0px auto;
+
+    width: 24em;
+    color: #C7C7C7;
+
+}
+a.credit-as
+{
+
+    color: #EB9E00;
+
+}
+a.url-link
+{
+    color: #909090;
+    text-decoration:none;
+}
+a.url-arrow
+{
+    color: #EB9E00;       
+    font-size: 14px;
+}
+a.url-link1
+{
+    color: #909090;
+    font-size: 14px;
+    text-decoration:none;
+}
+a.url-arrow1
+{
+    margin: 20px;
+    color: #EB9E00;
+    font-size: 14px;
+}
+#boxomoss
+{
+    float: left;
+    margin-left: 45px;
+    margin-top: 80px;
+    height: 400px;
+    width: 591px;
+}
+#boxomossheader
+{
+    height: 20px;
+    width: 591px;
+}
+#boxomoss2
+{
+    float: left;
+    height: 400px;
+    width:  295.5px;
+}
+#boxomoss1
+{
+    float: left;
+    height: 400px;
+    width:  295.5px;
+}
+#kontaktosssub
+{   
+    float: left;
+    margin-top: 0px;
+    height: 70px;
+    width: 306px;
+}
+#forsidesub
+{
+    float: left;
+    margin-top: 10px;
+    height:50px;
+    width: 306px;
+}
+a.headeromoss
+{
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.texttjenester
+{
+    float: left;
+    margin-top: 10px;
+    color: #909090;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.texttjenester2
+{
+    margin-top: 100px;
+    margin: 10px;
+    float: left;
+    color: #909090;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+a.biggertext
+{
+    font-size: 14px;
+}
+a.miniheader
+{
+    color: #EB9E00;
+}
+a.email
+{
+    font-size: 12px;
+    text-decoration: underline;
+}
+p.kontaktosstext
+{
+  font-size: 12px;
+  color: #C7C7C7;
+  font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+  text-decoration:none;
+}
+p.forsidetext
+{
+  font-size: 12px;
+  color: #C7C7C7;
+  font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+  text-decoration:none;
+}
+#boxtjenester
+{
+    float: left;
+    margin-left: 45px;
+    margin-top: 80px;
+    height: 450px;
+    width: 591px;
+}
+#tjenesterheader
+{
+    height: 20px;
+    width: 591px;
+}
+#boxtjenester1
+{
+    float: left;
+    height: 410px;
+    width:  295.5px;
+}
+#boxtjenester2
+{
+    float: left;
+    height: 410px;
+    width:  295.5px;
+}
+a.headertjenestertext
+{
+    float: left;
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.texttjenester1
+{
+    float: left;
+    margin-top: 10px;
+    color: #909090;
+    font-size: 11px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.texttjenester2
+{
+    float: left;
+    margin-top: 10px;
+    color: #909090;
+    font-size: 11px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+#boxpartnere
+{
+    float: left;
+    margin-left: 45px;
+    margin-top: 80px;
+    height: 420px;
+    width: 591px;
+}
+#partnereheader
+{
+    height: 20px;
+    width: 591px;
+
+}
+#boxpartnere1
+{
+    float: left;
+    height: 400px;
+    width:  295.5px;
+}
+#boxpartnere2
+{
+    float: left;
+    height: 400px;
+    width:  295.5px;
+}
+a.headerpartnertext
+{
+    float: left;
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.textpartnere1
+{
+    float: left;
+    margin-top: 10px;
+    color: #909090;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.textpartnere2
+{
+    float: left;
+    margin-top: 10px;
+    color: #909090;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+#boxkontaktoss
+{
+    float: left;
+    margin-left: 45px;
+    margin-top: 80px;
+    height: 450px;
+    width: 926px;
+}
+#kontaktossheader
+{
+    height: 20px;
+    width: 591px;
+}
+#kontaktossbox1
+{
+    float: left;
+    height: 400px;
+    width:  295.5px;
+}
+#kontaktossbox2
+{
+    float: left;
+    height: 400px;
+    width:  295.5px;
+}
+a.headerkontaktoss
+{
+    float: left;
+    color: #EB9E00;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.konkatliste1
+{
+    float: left;
+    margin-top: 10px;
+    color: #909090;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+p.konkatliste2
+{
+    float: left;
+    margin-top: 10px;
+    color: #909090;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;
+    text-decoration:none;
+}
+#emailform
+{
+    float: left;
+    margin-top: 80px;
+    height:300px;
+    width: 206px;
+}

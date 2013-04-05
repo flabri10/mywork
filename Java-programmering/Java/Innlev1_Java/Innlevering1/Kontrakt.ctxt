@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=dag
+comment0.target=Kontrakt(java.lang.String)
+comment1.params=registreringsnr\ kontaktperson\ pris\ dag
+comment1.target=Kontrakt(java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment2.params=dag
+comment2.target=void\ setDag(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getDag()
+comment4.params=
+comment4.target=void\ arkiver()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Velkommen til Romskipet!" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    
+	<title>Romskipet Hålogaland</title>
+      
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css' />
+
+	<link rel="apple-touch-icon" href="images/appicon.png"/>
+    <link rel="stylesheet" type="text/css" href="iphone.css" />
+    
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			
+			$('#content').fadeIn(1000, function () {
+			});
+	
+			window.addEventListener("load", function() { setTimeout(loaded, 100) }, false);
+	
+			function loaded() {
+				document.getElementById("page_wrapper").style.visibility = "visible";
+				window.scrollTo(0, 1); // pan to the bottom, hides the location bar
+			}
+		});
+	</script>
+
+</head>
+
+<body onorientationchange="updateOrientation();">
+
+	<div id="page_wrapper">
+		<div id="header">
+            <img src="images/logo.png" />
+            <ul id="meny">
+                <li><a class="aktivSide" href="index.html">Aktuelt</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="kontakt.html">Info</a></li>
+            </ul>
+            </div>
+            
+        <div id="content">    
+        
+            <div class="tekstContainer">
+                <h3>Med fysikken i fokus</h3>
+                <p class="pDato"><i>8. Mai 2012</i></p>
+                <p>I disse dager har NAROM gjennomført ikke mindre enn syv fysikk-camper for elever i videregående skole. Det betyr at 			 						i løpet av januar, februar og mars har 160 elever fra fire fylker opplevd skoledager fylt med spennende fysikk og aktiviteter. 																																																												 				Dette er det største antallet elever som noengang har deltatt på rekrutterings-programmet "Fysikken i fokus".</p>
+                <div class="linkButton"><a href="fysikkifokus.html">Les mer</a></div>
+			</div>
+            
+            <div class="tekstContainer">
+                <h3>Rakettfysikk i skolen</h3>
+                <p class="pDato"><i>30. Mars 2012</i></p>
+                <p>Den 22. – 23. mars inviterte NAROM i samarbeid med Utdanningsforbundet realfagslærere fra hele landet på kurs i ”Lærernes hus” i Oslo. Et lærerikt, morsomt og spennende kurs hvor lærerne fikk anvende Newtons lover og bevegelsesligningene for å gjøre beregninger på modellraketter.</p>
+                <div class="linkButton"><a href="rakettfysikk.html">Les mer</a></div>
+			</div>
+            
+            <div class="tekstContainer">
+                <h3>Teddynaut i verdensrommet</h3>
+                <p class="pDato"><i>15. Februar 2012</i></p>
+
+                <p>I tidsrommet 10. til 25.april skal ungdomsskoleklasser over hele landet skyte opp Teddynauter med værballong. Skoleklassene konkurrerer om en dag på Andøya Rakettskytefelt den 18.august hvor Norge 50 år i verdensrommet skal feires. Teddynauten som vinner skal da skytes opp i en rakett under oppsyn av blant annet astronaut Christer Fuglesang.</p>
+                <div class="linkButton"><a href="teddynaut.html">Les mer</a></div>
+			</div>
+	</div>
+
+</body>
+</html>

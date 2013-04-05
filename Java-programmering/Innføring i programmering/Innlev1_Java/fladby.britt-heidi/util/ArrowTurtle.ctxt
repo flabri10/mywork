@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=color\ heading
+comment0.target=ArrowTurtle(Color,\ float)
+comment1.params=width\ height\ color\ heading
+comment1.target=ArrowTurtle(int,\ int,\ Color,\ float)
+comment2.params=turtlePixels\ turtleSideSize
+comment2.target=void\ initTurtlePixels(int[],\ int)
+numComments=3

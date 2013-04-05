@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=varighet
+comment0.target=Engasjement(int)
+comment1.params=registreringsnr\ kontaktperson\ pris\ varighet
+comment1.target=Engasjement(java.lang.String,\ java.lang.String,\ int,\ int)
+comment2.params=varighet
+comment2.target=void\ setVarighet(int)
+comment3.params=
+comment3.target=int\ getVarighet()
+comment4.params=
+comment4.target=void\ arkiver()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

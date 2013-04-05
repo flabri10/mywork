@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Tjeneste()
+comment1.params=registreringsnr\ kontaktperson\ pris
+comment1.target=Tjeneste(java.lang.String,\ java.lang.String,\ int)
+comment10.params=e
+comment10.target=int\ compareTo(Tjeneste)
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=registreringsnr
+comment2.target=void\ setRegistreringsnr(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getRegistreringsnr()
+comment4.params=kontaktperson
+comment4.target=void\ setKontaktperson(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getKontaktperson()
+comment6.params=pris
+comment6.target=void\ setPris(int)
+comment7.params=
+comment7.target=int\ getPris()
+comment8.params=
+comment8.target=void\ arkiver()
+comment9.params=o
+comment9.target=boolean\ equals(java.lang.Object)
+numComments=12

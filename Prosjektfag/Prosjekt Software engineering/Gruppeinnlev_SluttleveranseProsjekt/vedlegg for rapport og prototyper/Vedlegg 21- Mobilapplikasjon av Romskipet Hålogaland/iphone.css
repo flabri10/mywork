@@ -1,0 +1,194 @@
+* {
+	margin:0;
+	padding:0;
+	-webkit-text-size-adjust:none; 	
+}
+body{
+	background:#cacaca;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 62.5%; /* 62.5% means 1em = 10px */
+	color:#333;
+}
+
+h1,h2,h3,h4,h5,h6,h7,h8, a {
+	color:#48a2cc;
+	text-decoration:none;
+}
+
+p {
+	font-size:12px;	
+	padding:10px;
+}
+h3 {
+	font-size:14px;	
+	padding:10px;
+}
+#page_wrapper{
+	overflow:auto;
+	padding-bottom:20px;
+	}
+#content {
+	display:none;	
+}
+.tekstContainer{
+	display:block;
+	position:relative;
+    background:#fff;    
+	margin:0 5px 10px 5px;
+	border-radius:5px;
+	border:1px solid #dcdcdc;
+	 
+	background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
+    background:-moz-linear-gradient(top,  #fff,  #efefef);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#efefef');
+}
+.tekstContainer img{
+	width:289px;
+	margin-left:10px;	
+}
+.tekstContainer ul li {
+	font-size:12px;	
+}
+.pDato {
+	position:absolute;
+	right:0;
+	top:0;	
+}
+.linkButton {
+    display:block;
+    padding:7px;
+    color:#444444;
+    
+    background:#fff;
+    background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#f1f1f1));
+    background:-moz-linear-gradient(top,  #fff,  #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
+    border:1px solid #ececec;
+	text-align:center;
+	font-size:12px;
+}
+
+/*--------------------------------------
+		HEADER
+---------------------------------------*/
+
+#header {
+	background:url(images/bg.png);
+	height:85px;
+	margin:0 0 10px 0;
+}
+#header img {
+	margin:0 0 0 10px;	
+}
+#meny {
+	margin-top:30px;
+	width:65%;
+	list-style-type:None;
+	float:right;
+	background:url('images/mainNavBg.png');
+	border-bottom:3px solid #323f45;
+	padding:0 0 0 0;
+	
+}
+#meny li {
+	text-decoration:none;
+	float:left;	
+}
+#meny li a {
+	display:block;
+	color:#fff;
+	font-size:14px;
+	padding:10px 10px 8px 10px;
+}
+.aktivSide {
+	background:url(images/mainNavBgHover.png);
+}
+
+
+
+
+/*------------------------------------------------------
+----------------- MEDIA ----------------------------------
+------------------------------------------------------*/
+#divBilder img {
+	width:104px;
+	height:70px;
+	margin:1px;
+	padding:0;
+	
+}
+
+#bildeFremviser {
+
+    height:100%;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:fixed;
+    left:0;
+    top:0;
+    display:none;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align:center;
+    z-index:99;
+    
+}
+#fokusBilde {
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    margin:auto;
+	width:95%;
+	background:#fff;
+	padding:3px;
+	
+    
+}
+
+/*-----------------------------------------------
+--------------- KONTAKT ----------------------------
+-------------------------------------------------*/
+
+#kart iframe{
+	margin-top:-20px;
+}
+table tr td {
+	font-size:14px;
+	color:#333;	
+}
+#tableMelding {
+
+	position:absolute;	
+	right:10px;
+	top:0;
+}
+ul{
+	padding:10px;
+	list-style-type:none;	
+}
+
+/*-----------------------------
+	ORIENTATION
+-----------------------------*/
+
+#content_left,
+#content_right,
+#content_normal,
+#content_flipped{
+	display:none;
+	position:relative;
+	}
+.show_normal,
+.show_flipped{
+	width:320px;
+	}
+.show_left,
+.show_right{
+	width:480px;
+	}
+
+.show_left #content_left,
+.show_right #content_right,
+.show_normal #content_normal,
+.show_flipped #content_flipped{
+	display:block;
+	}

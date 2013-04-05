@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=label\ where\ font\ color
+comment0.target=TGLabelOp(String,\ TGPoint,\ Font,\ Color)
+comment1.params=inMemoryImage
+comment1.target=Rectangle\ doIt(Image)
+comment2.target=Color\ getColor()
+comment3.params=img\ flags\ x\ y\ wd\ ht
+comment3.target=boolean\ imageUpdate(Image,\ int,\ int,\ int,\ int,\ int)
+numComments=4

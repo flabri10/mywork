@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document- Kodet av Brit-Heidi Fladby */
+header h1
+{
+	margin-top: 50px;	
+	width: 200px;
+}
+
+header
+{
+	height: 100px;
+	width: 500px;	
+	padding: 0;
+	float: left;
+}
+
+#divContainer
+{
+	width: 960px;
+	height: 780px;
+	margin: auto;	
+}	
+
+#divSoek
+{
+	float: right;
+	width: 380px;
+	height: 100px;	
+	margin-top: 50px;
+}
+
+#divSect
+{
+	width: 960px;
+	height: 700px;
+	position: absolute;
+	top: 150px;	
+}
+
+.divMusikerboks
+{
+	border: #e6e6e6;
+	border-width: 2px;
+	width: 300px;
+	height: 420px;
+	float: left;
+}
+
+img
+{
+	width: 250px;
+	height: 250px;	
+}
+
+hr
+{
+	height: 2px;
+	color: #e6e6e6;
+	width: 960px;
+		
+}

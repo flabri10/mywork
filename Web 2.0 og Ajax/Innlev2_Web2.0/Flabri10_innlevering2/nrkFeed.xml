@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Kodet av Britt-Heidi Fladby-->
+<rss version="2.0">
+	<channel>
+		<category>Fotball</category>
+		<link>http://www.nrksport.no/fotball/siste.rss</link>
+		<item>
+			<link></link>
+			<title></title>
+			<pubDate></pubDate>
+			<description></description>
+			<enclosure></enclosure>
+		</item>
+	</channel>
+	<channel>
+		<category>Økonomi</category>
+		<link>http://www.nrk.no/nyheiter/okonomi/siste.rss</link>
+		<item>
+			<link></link>
+			<title></title>
+			<pubDate></pubDate>
+			<description></description>
+			<enclosure></enclosure>
+		</item>
+	</channel>
+	<channel>
+		<category>Helse, forbruk og livsstil</category>
+		<link>http://www.nrk.no/helse-forbruk-og-livsstil/siste.rss</link>
+		<item>
+			<link></link>
+			<title></title>
+			<pubDate></pubDate>
+			<description></description>
+			<enclosure></enclosure>
+		</item>
+	</channel>
+	<channel>
+		<category>Vitenskap og teknologi</category>
+		<link>http://www.nrk.no/vitenskap-og-teknologi/siste.rss</link>
+		<item>
+			<link></link>
+			<title></title>
+			<pubDate></pubDate>
+			<description></description>
+			<enclosure></enclosure>
+		</item>
+	</channel>
+</rss>

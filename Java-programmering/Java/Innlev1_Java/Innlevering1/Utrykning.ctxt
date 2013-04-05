@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=gebyr
+comment0.target=Utrykning(int)
+comment1.params=registreringsnr\ kontaktperson\ pris\ gebyr
+comment1.target=Utrykning(java.lang.String,\ java.lang.String,\ int,\ int)
+comment2.params=gebyr
+comment2.target=void\ setGebyr(int)
+comment3.params=
+comment3.target=int\ getGebyr()
+comment4.params=
+comment4.target=void\ arkiver()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

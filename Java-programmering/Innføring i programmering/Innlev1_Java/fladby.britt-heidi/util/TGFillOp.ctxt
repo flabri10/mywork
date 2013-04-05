@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=point\ color
+comment0.target=TGFillOp(TGPoint,\ Color)
+comment1.target=void\ addLeftPixels()
+comment10.params=x\ y\ width\ height
+comment10.target=boolean\ getPixels(int,\ int,\ int,\ int)
+comment11.params=img\ flags\ x\ y\ wd\ ht
+comment11.target=boolean\ imageUpdate(Image,\ int,\ int,\ int,\ int,\ int)
+comment11.text=This\ method\ is\ called\ when\ information\ about\ an\ image\ which\ was\npreviously\ requested\ using\ an\ asynchronous\ interface\ becomes\ available.\n\nThis\ method\ should\ return\ true\ if\ further\ updates\ are\ needed\ or\ false\nif\ the\ required\ information\ has\ been\ acquired.\ The\ image\ which\ was\ being\ntracked\ is\ passed\ in\ using\ the\ img\ argument.\ Various\ constants\ are\ncombined\ to\ form\ the\ infoflags\ argument\ which\ indicates\ what\ information\nabout\ the\ image\ is\ now\ available.\ The\ interpretation\ of\ the\ x,\ y,\ width,\nand\ height\ arguments\ depends\ on\ the\ contents\ of\ the\ infoflags\ argument.\ \n\n
+comment2.target=void\ addLowerPixels()
+comment3.target=void\ addRightPixels()
+comment4.target=void\ addUpperPixels()
+comment5.params=x\ y\ wd\ ht\ curRGB\ newRGB
+comment5.target=void\ floodFill(int,\ int,\ int,\ int,\ int,\ int)
+comment6.params=x\ y\ wd\ ht
+comment6.target=void\ printPixels(int,\ int,\ int,\ int)
+comment7.params=graphicsImage
+comment7.target=Rectangle\ doIt(Image)
+comment8.params=newImg\ x\ y
+comment8.target=void\ drawImage(Image,\ int,\ int)
+comment9.target=Color\ getColor()
+numComments=12

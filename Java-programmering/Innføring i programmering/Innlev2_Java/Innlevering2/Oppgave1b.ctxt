@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=uthold
+comment0.target=void\ setUthold(int)
+comment1.params=
+comment1.target=int\ getUthold()
+comment2.params=utholdenhet
+comment2.target=void\ setUtholdenhet(int)
+comment3.params=
+comment3.target=int\ getUtholdenhet()
+comment4.params=mestUtholdentTall
+comment4.target=void\ setMestUtholdentTall(int)
+comment5.params=
+comment5.target=int\ getMestUtholdentTall()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

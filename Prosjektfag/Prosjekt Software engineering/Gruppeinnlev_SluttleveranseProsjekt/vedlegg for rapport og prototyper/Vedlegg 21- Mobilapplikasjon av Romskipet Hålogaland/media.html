@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Velkommen til Romskipet!" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	
+    <title>Romskipet Hålogaland</title>
+    
+	<link rel="apple-touch-icon" href="images/appicon.png"/>
+    <link rel="stylesheet" type="text/css" href="iphone.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css' />
+	
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+   
+			$('#content').fadeIn(1000, function () {
+		
+			});
+	
+			window.addEventListener("load", function() { setTimeout(loaded, 100) }, false);
+	
+			function loaded() {
+				document.getElementById("page_wrapper").style.visibility = "visible";
+				window.scrollTo(0, 1); // pan to the bottom, hides the location bar
+			}
+		}); 
+	</script>
+
+</head>
+
+<body>
+
+	<div id="page_wrapper">
+    
+		<div id="header">
+           <img src="images/logo.png" />
+            <ul id="meny">
+                <li><a href="index.html">Aktuelt</a></li>
+                <li><a class="aktivSide" href="Media.html">Media</a></li>
+                <li><a href="Kontakt.html">Info</a></li>
+            </ul>
+         </div>
+            
+         <div id="content">   
+             <div id="divBilder"></div>
+			 <div id="bildeFremviser">
+                <img id="fokusBilde" src="" />
+            </div>
+		</div>
+    </div>
+            
+</body>
+</html>

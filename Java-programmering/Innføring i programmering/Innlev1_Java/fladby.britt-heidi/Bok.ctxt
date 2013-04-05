@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=forfatter\ tittel\ sider
+comment0.target=Bok(java.lang.String,\ java.lang.String,\ int)
+comment1.params=forfatterNavn
+comment1.target=void\ setForfatter(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getForfatter()
+comment3.params=tittelNavn
+comment3.target=void\ setTittel(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getTittel()
+comment5.params=sider1
+comment5.target=void\ setSider(int)
+comment6.params=
+comment6.target=int\ getSider()
+comment7.params=refnr
+comment7.target=void\ setReferanseNummer(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getReferanseNummer()
+comment9.params=
+comment9.target=void\ skrivDetaljer()
+numComments=10

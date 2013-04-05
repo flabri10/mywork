@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--Innlevering 1 kodet av Britt-Heidi Fladby-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Musikere</title>
+<script type="text/javascript" src="jsonMusikere.js"></script>
+<script type="text/javascript" src="jquery-1.8.1.js"></script>
+<link rel="stylesheet" type="text/css" href="stilsett.css"/>
+
+<script type="text/javascript">
+<!--
+var tophitsTekst = " ";
+
+$(function(){
+	
+	visMusikere(jsonMusikere);
+	settEvents();
+});
+
+function settEvents(){
+	
+	$('btnSoek')
+		.click (function(){
+			hentMusikerSoek();	
+		}
+	);	
+}
+
+function visMusikere(jsonliste){
+	
+	var htmlTekst = " ";
+	
+	$.each(jsonliste.musikere, function(i, musiker){
+		var sjanger = musiker.sjanger;
+		var artistnavn = musiker.artistnavn;
+		var navn = musiker.navn;
+		var fodt = musiker.fodt;
+		var fra = musiker.fra;
+		var bilde = musiker.bilde;
+		
+		htmlTekst += "<div class='divMusikerboks'>";
+		htmlTekst += "<h2>" + artistnavn + "</h2>";
+		htmlTekst += "<p>" + sjanger + "</p>";
+		htmlTekst += "<ul><li>Fullt navn: " + navn + "</li>";
+		htmlTekst += "<li>Født: " + fodt + "</li>";
+		htmlTekst += "<li>Fra: " + fra + "</li></ul>";
+		htmlTekst += "<img src='" + bilde + "' alt='artist'/>";
+		
+		$.each(jsonliste.musikere.tophits, function(i, hits){
+			
+			var tittel = hits.tittel;
+			var aar = hits.aar;
+			
+			tophitsTekst += "<li>" + tittel + "(" + aar + ")</li>";
+		});
+		
+		$(htmlTekst).html(tophitsTekst);
+		
+		htmlTekst += "<ul>" + tophitsTekst + "</ul>";
+		htmlTekst += "</div>";
+	});	
+	
+	$("#sectMusikere").html(htmlTekst);
+}
+
+function hentMusikerSoek(){
+	
+	var htmlTekst = "<h3>Resultater: </h3>";
+	var soekeOrd = " + $('txtSoek').val() + ";
+	
+	$.getJSON(urlString,function(jsonMusikere){
+		$.each(jsonMusikere.musikere, function(i, musiker){
+			if (soekeOrd == musiker.sjanger || soekeOrd == musiker.artistnavn){
+				htmlTekst += "<div class='divMusikerboks'>";
+				htmlTekst += "<h2>" + artistnavn + "</h2>";
+				htmlTekst += "<p>" + sjanger + "</p>";
+				htmlTekst += "<ul><li>Fullt navn: " + navn + "</li>";
+				htmlTekst += "<li>Født: " + fodt + "</li>";
+				htmlTekst += "<li>Fra: " + fra + "</li></ul>";
+				htmlTekst += "<img src='" + bilde + "' alt='artist'/>";
+				
+				$.each(jsonliste.tophits, function(i, hits){
+			
+					var tittel = hits.tittel;
+					var aar = hits.aar;
+			
+					tophitsTekst += "<li>" + tittel + "(" + aar + ")</li>";
+				});
+		
+				$(htmlTekst).html(tophitsTekst);
+				
+				htmlTekst += "<ul>" + tophitsTekst + "</ul>";
+				htmlTekst += "</div>";		
+			}
+		});
+		
+		$('#sectMusikere').html(htmlStreng);		
+	})
+	
+	.error(function(jsonStatus){
+		alert("Feil ved søk. JSON.stringify(jsonStatus)");
+	});			
+}
+-->
+</script>
+</head>
+
+<body>
+<div id="divContainer">
+	<header>
+    	<h1>Musikere</h1>
+    </header>
+	<div id="divSoek">
+    	<label for="txtSoek">Søk (musiker eller kategori)
+    		<input id="txtSoek" type="text"/>
+        </label>
+        
+        <input id="btnSoek" type="button" value="Søk"/>
+    </div>
+    <div id="divSect">
+    	<section id="sectMusikere">
+    	</section>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+C:\Users\bhfladby\Documents\Visual Studio 2010\Projects\Innlevering3_flabri10\Innlevering3_flabri10\bin\Innlevering3_flabri10.dll
+C:\Users\bhfladby\Documents\Visual Studio 2010\Projects\Innlevering3_flabri10\Innlevering3_flabri10\bin\Innlevering3_flabri10.pdb
+C:\Users\bhfladby\Documents\Visual Studio 2010\Projects\Innlevering3_flabri10\Innlevering3_flabri10\obj\Release\Innlevering3_flabri10.dll
+C:\Users\bhfladby\Documents\Visual Studio 2010\Projects\Innlevering3_flabri10\Innlevering3_flabri10\obj\Release\Innlevering3_flabri10.pdb

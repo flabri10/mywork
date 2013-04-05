@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbRomskipet" Class="ormRomskipetDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\dbRomskipet.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="dbRomskipetConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Administrator" Member="Administrators">
+    <Type Name="Administrator">
+      <Column Name="AdminID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Brukernavn" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Passord" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Fornavn" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Etternavn" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Mobil" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Produkt" Member="Produkts">
+    <Type Name="Produkt">
+      <Column Name="ProduktID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProduktNavn" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Pris" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Beskrivelse" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Bilde" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Association Name="Produkt_Ordrelinje" Member="Ordrelinjes" ThisKey="ProduktID" OtherKey="ProduktID" Type="Ordrelinje" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AktivitetPåmelding" Member="AktivitetPåmeldings">
+    <Type Name="AktivitetPåmelding">
+      <Column Name="AktivitetPåmeldingID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AktivitetID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BrukerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Bruker_AktivitetPåmelding" Member="Bruker" ThisKey="BrukerID" OtherKey="BrukerID" Type="Bruker" IsForeignKey="true" />
+      <Association Name="Aktivitet_AktivitetPåmelding" Member="Aktivitet" ThisKey="AktivitetID" OtherKey="AktivitetID" Type="Aktivitet" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bruker" Member="Brukers">
+    <Type Name="Bruker">
+      <Column Name="BrukerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Brukernavn" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Passord" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fornavn" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Etternavn" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Mobil" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Bruker_AktivitetPåmelding" Member="AktivitetPåmeldings" ThisKey="BrukerID" OtherKey="BrukerID" Type="AktivitetPåmelding" />
+      <Association Name="Bruker_KursPåmelding" Member="KursPåmeldings" ThisKey="BrukerID" OtherKey="BrukerID" Type="KursPåmelding" />
+      <Association Name="Bruker_Ordrelinje" Member="Ordrelinjes" ThisKey="BrukerID" OtherKey="BrukerID" Type="Ordrelinje" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Foreleser" Member="Forelesers">
+    <Type Name="Foreleser">
+      <Column Name="ForeleserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fornavn" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Etternavn" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Mobil" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Epost" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Utdanning" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Association Name="Foreleser_ForeleserPåmelding" Member="ForeleserPåmeldings" ThisKey="ForeleserID" OtherKey="ForeleserID" Type="ForeleserPåmelding" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ForeleserPåmelding" Member="ForeleserPåmeldings">
+    <Type Name="ForeleserPåmelding">
+      <Column Name="ForeleserPåmeldingID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ForeleserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="KursID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Foreleser_ForeleserPåmelding" Member="Foreleser" ThisKey="ForeleserID" OtherKey="ForeleserID" Type="Foreleser" IsForeignKey="true" />
+      <Association Name="Kurs_ForeleserPåmelding" Member="Kurs" ThisKey="KursID" OtherKey="KursID" Type="Kurs" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kurs" Member="Kurs">
+    <Type Name="Kurs">
+      <Column Name="KursID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kursnavn" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Beskrivelse" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Påmeldingsfrist" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Startdato" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Sluttdato" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Målgruppe" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Tilleggsinformasjon" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="MaxAntallDeltakere" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="KursAnsvarlig" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Samarbeidspartnere" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="Kurs_ForeleserPåmelding" Member="ForeleserPåmeldings" ThisKey="KursID" OtherKey="KursID" Type="ForeleserPåmelding" />
+      <Association Name="Kurs_KursPåmelding" Member="KursPåmeldings" ThisKey="KursID" OtherKey="KursID" Type="KursPåmelding" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KursPåmelding" Member="KursPåmeldings">
+    <Type Name="KursPåmelding">
+      <Column Name="KursPåmeldingID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KursID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BrukerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Bruker_KursPåmelding" Member="Bruker" ThisKey="BrukerID" OtherKey="BrukerID" Type="Bruker" IsForeignKey="true" />
+      <Association Name="Kurs_KursPåmelding" Member="Kurs" ThisKey="KursID" OtherKey="KursID" Type="Kurs" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bilder" Member="Bilders">
+    <Type Name="Bilder">
+      <Column Name="BildeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Bildenavn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ordrelinje" Member="Ordrelinjes">
+    <Type Name="Ordrelinje">
+      <Column Name="OrdrelinjeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProduktID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BrukerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Leveringsadresse" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Postnummer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Bruker_Ordrelinje" Member="Bruker" ThisKey="BrukerID" OtherKey="BrukerID" Type="Bruker" IsForeignKey="true" />
+      <Association Name="Produkt_Ordrelinje" Member="Produkt" ThisKey="ProduktID" OtherKey="ProduktID" Type="Produkt" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nyhet" Member="Nyhets">
+    <Type Name="Nyhet">
+      <Column Name="NyhetsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tittel" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="Ingress" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Brødtekst" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Bildetittel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dato" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Aktivitet" Member="Aktivitets">
+    <Type Name="Aktivitet">
+      <Column Name="AktivitetID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AktivitetNavn" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Beskrivelse" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Startdato" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Sluttdato" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StartTidspunkt" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SluttTidspunkt" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Aktivitet_AktivitetPåmelding" Member="AktivitetPåmeldings" ThisKey="AktivitetID" OtherKey="AktivitetID" Type="AktivitetPåmelding" />
+    </Type>
+  </Table>
+</Database>

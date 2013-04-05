@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=ringetid\ selskap\ erTomt
+comment0.target=Kontantkort(int,\ java.lang.String,\ boolean)
+comment1.params=
+comment1.target=Kontantkort()
+comment2.params=ringetid
+comment2.target=void\ setRingetid(int)
+comment3.params=nyRingetid
+comment3.target=void\ fyllPaaRingetid(int)
+comment4.params=brukRingetid
+comment4.target=void\ brukRingetid(int)
+comment5.params=
+comment5.target=int\ getRingetid()
+comment6.params=erTomt
+comment6.target=void\ erTomt(boolean)
+comment7.params=selskap
+comment7.target=void\ setSelskap(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getSelskap()
+comment9.params=
+comment9.target=void\ skrivDetaljer()
+numComments=10

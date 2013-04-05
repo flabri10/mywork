@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--Innlevering 1 kodet av Britt-Heidi Fladby-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Twitterfeed- oppgave 4</title>
+<link rel="stylesheet" type="text/css" href="stilsett.css"/>
+<script type="text/javascript" src="jquery-1.8.1.js"></script>
+<script type="text/javascript">
+<!--
+
+var urlString = "http://search.twitter.com/search.json?callback=twitterSearch&q=%23cat";
+
+var htmlStreng = " "; 
+
+$(function(){
+    settEvents();
+});
+
+function settEvents(){
+	
+	$('#btnHentTwitterfeed')
+    	.click(function(){
+        	hentJSONtekst();
+        }
+    );
+	
+	$('#btnHentBilder')
+		.click(function(){
+			alert("henter bilder");
+			hentTwitterBilder();	
+		}
+	);
+	
+	$('#btnSoek')
+		.click(function(){
+			hentSoek();
+		}
+	);
+}
+
+function hentJSONtekst(){
+	$.getJSON(urlString, function(jsonTwitter){
+   		var jsonString = JSON.stringify(jsonTwitter);  
+        $('#sectTwitterfeed').html("<xmp>" + jsonString + "</xmp>");
+    });
+}
+
+function hentTwitterBilder(){
+	htmlStreng = " ";
+	$.getJSON(urlString,function(jsonTwitter){
+		$.each(jsonTwitter.results, function(i, twitterPost){
+			htmlStreng += "<p>" + twitterPost.text + "</p>";	
+			htmlStreng += "<img src='" + twitterPost.profile_image_url + "'>";	
+		})
+			
+		$('#sectTwitterfeed').html(htmlStreng);
+	})
+	.error(function(jsonStatus){
+		alert("Feil ved søk. JSON.stringify(jsonStatus)");
+	});	
+}
+
+function hentSoek(){
+	
+	htmlStreng = "";
+	
+	urlString = "http://search.twitter.com/search.json?callback=twitterSearch&q=%23" + $('txtSoek').val();
+	
+	$.getJSON(urlString,function(jsonTwitter){
+		$.each(jsonTwitter.results, function(i, twitterPost){
+			htmlStreng += "<h2>" + twitterPost.from_user_name + "</h2>";
+			htmlStreng += "<p>" + twitterPost.text + "</p>";
+			htmlStreng += "<p>" + twitterPost.created_at + "</p>";
+			htmlStreng += "<img src='" + twitterPost.profile_image_url + "' alt='twitterbilde'>";
+			htmlStreng += "</hr>";	
+		})
+			
+		$('#sectTwitterFeed').html(htmlStreng);
+	})
+	
+	.error(function(jsonStatus){
+		alert("Feil ved soek. JSON.stringify(jsonStatus)");
+	});	
+}
+-->
+</script>
+</head>
+
+<body>
+<div id="divContainer">
+	<header>
+    	<h1>Twitterfeed</h1>
+    </header>
+    
+    <div id="divMenu">
+    	<input id="btnHentTwitterfeed" type="button" value="Hent twitterfeed"/>
+        <input id="btnHentTwitterbilder" type="button" value="Hent twitterbilder"/>
+    </div>
+        
+    <div id="divSearch">
+    	<label for="txtSoek">Søk etter noe:
+        	<input id="txtSoek" type="text"/>
+        </label>
+        <input id="btnSoek" value="Søk" type="button"/>
+    </div>
+   
+   	<div id="divSect">
+    	<section id="sectTwitterfeed">
+    	</section>
+    </div>
+</div>
+</body>
+</html>

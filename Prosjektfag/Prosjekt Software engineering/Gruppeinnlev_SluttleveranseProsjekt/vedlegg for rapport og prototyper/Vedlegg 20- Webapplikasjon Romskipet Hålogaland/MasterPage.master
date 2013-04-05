@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <!-- import av jQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <!-- import av egne js og css -->
+    <script type="text/javascript" src="js/javascript_media_history.js"></script>
+    
+    <title>Romskipet Hålogoland</title>
+    <link rel="Stylesheet" type="text/css" href="css/stilsett.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css' />
+    
+</head>
+<body>
+    <form id="form2" runat="server">
+
+    <div id="header">
+        <div id="headerWrapper">
+            <div id="logo">
+                <a href="Forside.aspx"><img src="gfx/logo_v2.png" alt="Logo" /></a>
+            </div>
+ 
+            <div id="topNav"> 
+                <ul>
+                    <li><a href="Kontakt.aspx">Kontakt</a></li>
+                    <li><a href="Info.aspx">Info</a></li>
+                    <li><a href="Nettbutikk.aspx">Nettbutikk</a></li>
+                    <li><asp:LinkButton ID="lbtnLoggInn" runat="server" Text="Logg inn/registrering" OnClick="SjekkLoggInnStatus"></asp:LinkButton></li>
+                </ul>
+ 
+            </div>
+
+                 <div id="mainNav">
+                    <ul>
+                        <li><a href="Forside.aspx">Hjem</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Se & gjøre</a>
+                            <ul>
+                                <li><a href="Romskipet.aspx">Romskipet Hålogaland</a></li>
+                                <li><a href="Nordlys.aspx">Nordlys</a></li>
+                                <li><a href="Hvalsafari.aspx">Hvalsafari</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                     <ul>
+                        <li><a href="#">Utdanning</a>
+                            <ul>
+                                <li><a href="Skoletilbud.aspx">Skoletilbud</a></li>
+                                <li><a href="KursOversikt.aspx">Kurs og aktiviteter</a></li>
+                                <li><a href="Prosjekter.aspx">Prosjekter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                     <ul>
+                        <li><a href="#">Forskning</a>
+                            <ul>
+                                <li><a href="Rakettskytefeltet.aspx">Andøya Rakettskytefelt</a></li>
+                                <li><a href="ALOMAR.aspx">ALOMAR</a></li>
+                                <li><a href="Nordlyssenteret.aspx">Nordlyssenteret</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                     <ul>
+                        <li><a href="Aktuelt.aspx">Aktuelt</a></li>
+                    </ul>
+
+                     <ul>
+                        <li><a href="#">Underholdning</a>
+                            <ul>
+                                <li><a href="Media.aspx">Media</a></li>
+                                <li><a href="Spill.aspx">Spill</a></li>
+                                <li><a href="Konkurranser.aspx">Konkurranser</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                     <ul>
+                        <li><a href="#">Norsk Romfart</a>
+                            <ul>
+                                <li><a href="Historie.aspx">Norsk romfartshistorie</a></li>
+                                <li><a href="NAROM.aspx">NAROM</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                 
+                 </div>
+        </div>
+    
+    </div>
+
+    <asp:ContentPlaceHolder ID="cphExtendedHeader" runat="server"></asp:ContentPlaceHolder>
+    
+    <div id="mainContent">
+        <div id="sosialeWrapper">
+            <a href="http://www.facebook.com/pages/Narom/131376430263352"><img src="gfx/facebookIcon.png" alt="Følg oss på Facebook!" /></a>
+            <a href="http://www.twitter.com/romskipet"><img src="gfx/twitterIcon.png" alt="Følg oss på Twitter!"/></a>
+        </div>
+
+        <asp:Literal ID="litTest" runat="server"></asp:Literal>
+
+        <asp:ContentPlaceHolder id="cphMainContent" runat="server">
+               
+        </asp:ContentPlaceHolder>
+
+    </div>
+
+     <div id="footer">
+         <div class="footerboks">
+                <a href="LoggInn.aspx">Logg inn</a>
+            	<a href="AdminPanel.aspx">Administrator</a>
+                <a href="http://www.rocketrange.no/">Andøya Rocket Range</a>  
+          </div>
+            
+          <div class="footerboks">
+            	<p>Åpningstider:<br /> Mandag - fredag: 08.00 - 16.00<br /> Lørdag - søndag: 10.00 - 15.00</p>
+          </div>
+            
+           <div class="footerboks" id="noBorder">
+            	<p>Romskipet Hålogaland, Andøya<br />Tlf: 9284756<br /> e-post: romskipet@rh.no
+            </div> 
+      </div>
+    </form>
+</body>
+</html>

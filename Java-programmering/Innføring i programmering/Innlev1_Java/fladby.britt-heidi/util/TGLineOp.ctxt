@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=pt1\ pt2\ hd\ color\ wid
+comment0.target=TGLineOp(TGPoint,\ TGPoint,\ double,\ Color,\ int)
+comment1.params=img\ flags\ x\ y\ wd\ ht
+comment1.target=boolean\ imageUpdate(Image,\ int,\ int,\ int,\ int,\ int)
+comment10.target=String\ toString()
+comment2.params=g\ canvasHeight\ canvasWidth
+comment2.target=Rectangle\ drawHorizontalFatLine(Graphics,\ int,\ int)
+comment3.params=g\ canvasHeight\ canvasWidth
+comment3.target=Rectangle\ drawFatLine(Graphics,\ int,\ int)
+comment4.params=g\ canvasHeight\ canvasWidth
+comment4.target=Rectangle\ drawOnePixelFatLine(Graphics,\ int,\ int)
+comment5.params=g\ canvasHeight\ canvasWidth
+comment5.target=Rectangle\ drawVerticalFatLine(Graphics,\ int,\ int)
+comment6.params=ary
+comment6.target=int\ max(int[])
+comment7.params=ary
+comment7.target=int\ min(int[])
+comment8.params=inMemoryImage
+comment8.target=Rectangle\ doIt(Image)
+comment9.target=Color\ getColor()
+numComments=11

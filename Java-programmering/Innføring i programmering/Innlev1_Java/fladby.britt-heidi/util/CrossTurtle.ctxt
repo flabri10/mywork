@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=color\ heading
+comment0.target=CrossTurtle(Color,\ float)
+comment1.params=width\ height\ color\ heading
+comment1.target=CrossTurtle(int,\ int,\ Color,\ float)
+comment2.params=x1\ y1\ x2\ y2
+comment2.target=void\ drawLine(float,\ float,\ float,\ float)
+comment3.params=turtlePixels\ turtleSideSize
+comment3.target=void\ initTurtlePixels(int[],\ int)
+numComments=4
