@@ -1,0 +1,92 @@
+<!--Innlevering 3 Webdesign 2, kodet av Britt-Heidi Fladby-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styleSheetOppg3.css" type="text/css" rel="stylesheet" />
+<title>Oppgave 3</title>
+<script language="javascript">
+<!--
+var tid;
+var spørsmål = new Array();
+var valgtAlt;
+var antallRiktig;
+var jsonQuiz;
+
+function init(){
+	jsonQuiz = {spørsmålliste: [
+	{spørsmål1: "Hvem av disse er utvikleren av Jquery?", alt1: "<input id='imgAlt1' src='QuizBilder/jn.jpg' width='240' height='300' alt='alt1' type='image' />", alt2: "<input id='imgAlt2' src='QuizBilder/tbl.jpg' width='220' height='330' alt='alt2' type='image' />", alt3: "<input src='QuizBilder/jr.jpg' width='200' height='267' alt='alt3' type='image' />", svar: "<input src='QuizBilder/jr.jpg' width='200' height='267' alt='alt3' type='image' />"},
+	{spørsmål2: "Skriv navnet på utvikleren av jQuery.", alt: "Navn: <input id='txtSpørsmål2' type='text'/><input type='submit' value='svar'/>", svar: "John Resig"},
+	{spørsmål3: "I hvilket år ble jQuery lansert?", alt1: "2005<input id='rbtn2005' type='radio'/>", alt2: "2006<input id='rbtn2006' type='radio'/>", alt3: "2007<input id='rbtn2007' type='radio'/>", svar: "2006"}
+	]};
+}
+
+function Start(){
+	taTid();
+	Quiz();
+}
+
+function Quiz(){
+	
+}
+
+function spørsmål1(){
+	
+}
+
+function spørsmål2(){
+	
+}
+
+function spørsmål3(){
+	
+}
+
+$(document).ready 
+{
+  	function taTid()
+	{
+  		var now = new Date();
+
+  		var outSec = now.getSeconds();
+  		if(outSec<10){
+			document.getElementById('divTidtaker').innerHTML="0"+outSec;
+		}
+  		else{
+			document.getElementById('divTidtaker').innerHTML=outSec;
+		}
+
+  } 
+  taTid();
+  setInterval(function(){   taTid();}, 1000);
+
+};
+-->
+</script>
+</head>
+
+<body>
+<div id="divContainer">	
+	<div id="divHeader">
+  		<h1>jQuery-Quiz</h1>
+    </div>    
+    
+   	<div id="divStart">
+   		<input id="btnStart" type="button" value="Start" />
+	</div>    
+    
+    <div id="divTidstakerWrap">
+    	<h2>Gjenværende tid</h2>
+    	
+        <div id="divTidstaker"></div>	
+   	</div>
+    
+   	<div id="divResultat"></div>
+    
+    <div id="divQuiz">
+    	<div id="divSpørsmål"></div>  
+    	<div id="divOppgave"></div>
+    </div>
+</div>
+</body>
+</html>

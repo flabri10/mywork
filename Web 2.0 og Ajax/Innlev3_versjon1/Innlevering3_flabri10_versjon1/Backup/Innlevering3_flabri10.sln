@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Innlevering3_flabri10", "Innlevering3_flabri10\Innlevering3_flabri10.csproj", "{66C985FC-83B0-4C12-AB4D-38BFBAA1D95F}"
 EndProject
 Global

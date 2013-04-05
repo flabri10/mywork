@@ -1,0 +1,62 @@
+﻿/**Innlevering 3 Webdesign 1 kodet av Britt-Heidi Fladby-Flabri10
+**/
+html, body 
+{
+    background-color: black;
+    margin-top: 0;
+}
+
+.roundedCorners
+{
+    -moz-border-radius: 12px;
+    -webkit-border-radius:12px;
+    border-radius: 12px; 
+    background-color: white;
+}
+
+.knapper
+{
+    margin: 5px;    
+}
+
+#container
+{
+    width: 960px;
+    height: 680px;
+    background-color: #6496c8;
+    margin: auto;
+}
+
+#container h1
+{
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;    
+}
+
+#container #status
+{
+    background-color: white;
+    width: 145px;
+    height: 30px;
+    float: right;
+}
+
+#container #mainContent
+{
+    background-color: #255a8f;
+    position: absolute;
+    top: 90px;
+    height: 515px;
+    width: 960px;
+}
+
+#container #mainContent #innhold
+{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    margin: auto;
+    height: 485px;
+    width: 940px;
+}

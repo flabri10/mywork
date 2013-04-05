@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+<link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<div id="container">
+    <form id="form1" runat="server">
+    <a href="Registrering.aspx">Registrering av kunde</a>
+    <a href="Romoversikt.aspx">Romoversikt</a>
+    <h1>Drømmehotellet-Administrasjon</h1>
+    <div id="innhold">
+        
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="divLoggInnStatus">
+        <asp:Literal ID="litLoggInnStatus" runat="server"></asp:Literal>
+        <asp:LinkButton ID="lbLoggUt" runat="server" Text="Logg ut" OnClick="LoggUt"></asp:LinkButton>    
+    </div>
+    </form>
+</div>
+</body>
+</html>

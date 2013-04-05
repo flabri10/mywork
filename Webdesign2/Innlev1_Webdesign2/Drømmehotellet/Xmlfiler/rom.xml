@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<romliste>
+    <rom>
+        <rumId>101</rumId>
+        <tema>Jungelen</tema>
+        <tilstand>Ok</tilstand>
+        <pris>299</pris>
+        <ledig></ledig>
+    </rom>
+    <rom>
+        <rumId>102</rumId>
+        <tema>Verdensrommet</tema>
+        <tilstand>Jupiter har falt ned fra taket.</tilstand>
+        <pris>299</pris>
+        <ledig></ledig>
+    </rom>
+    <rom>
+        <rumId>103</rumId>
+        <tema>Western</tema>
+        <tilstand>Skuddhull i sengen.</tilstand>
+        <pris>299</pris>
+        <ledig></ledig>
+    </rom>
+    <rom>
+        <rumId>104</rumId>
+        <tema>Western 2</tema>
+        <tilstand>Lukter svett cowboy</tilstand>
+        <pris>299</pris>
+        <ledig></ledig>
+    </rom>
+    <rom>
+        <rumId>105</rumId>
+        <tema>Jurassic Park</tema>
+        <tilstand>Forsteinet</tilstand>
+        <pris>299</pris>
+        <ledig></ledig>
+    </rom>
+    <rom>
+        <rumId>106</rumId>
+        <tema>Kongens rom</tema>
+        <tilstand>Ok</tilstand>
+        <pris>349</pris>
+        <ledig></ledig>
+    
+    </rom>
+    <rom>
+        <rumId>107</rumId>
+        <tema>Skrekk og gru</tema>
+        <tilstand>Skummelt møkkete</tilstand>
+        <pris>349</pris>
+        <ledig></ledig>
+    </rom>
+</romliste>

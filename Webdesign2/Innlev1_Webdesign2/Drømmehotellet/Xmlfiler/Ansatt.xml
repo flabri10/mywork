@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ansattliste>
+    <ansatt>
+        <fornavn>Berit</fornavn>
+        <etternavn>Hansen</etternavn>
+        <brukernavn>bruker1</brukernavn>
+        <passord>12345</passord>
+    </ansatt>
+    <ansatt>
+        <fornavn>Jan</fornavn>
+        <etternavn>Johansen</etternavn>
+        <brukernavn>admin</brukernavn>
+        <passord>admin</passord>
+    </ansatt>
+    <ansatt>
+        <fornavn>Gjest</fornavn>
+        <etternavn>Gjest</etternavn>
+        <brukernavn>gjest</brukernavn>
+        <passord>gjest</passord>
+    </ansatt>
+</ansattliste>

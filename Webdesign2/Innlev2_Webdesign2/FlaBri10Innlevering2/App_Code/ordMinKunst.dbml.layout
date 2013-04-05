@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ormMinKunst">
+  <DataContextMoniker Name="/ormMinKunstDataContext" />
+  <nestedChildShapes>
+    <classShape Id="584a1e52-ac06-4aae-92b5-8277d6114b19" absoluteBounds="0.5, 2.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ormMinKunstDataContext/Bilde" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d65ea3ee-5c17-4773-9a52-72aa129066ae" absoluteBounds="0.515, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db634b9b-ea9b-4513-b0e5-423e9ded1d83" absoluteBounds="2.75, 5.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ormMinKunstDataContext/Kommentar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27e1074a-a99a-4707-81e9-79c25d456a20" absoluteBounds="2.765, 6.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.76044840494792); (1.5 : 6.76044840494792); (1.5 : 4.14589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ormMinKunstDataContext/Kommentar/Kommentar_Bilde" />
+      <nodes>
+        <classShapeMoniker Id="db634b9b-ea9b-4513-b0e5-423e9ded1d83" />
+        <classShapeMoniker Id="584a1e52-ac06-4aae-92b5-8277d6114b19" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.0312525 : 4.14589680989583); (2.0312525 : 6.28647170247396); (2.75 : 6.28647170247396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ormMinKunstDataContext/Bilde/Bilde_Kommentar" />
+      <nodes>
+        <classShapeMoniker Id="584a1e52-ac06-4aae-92b5-8277d6114b19" />
+        <classShapeMoniker Id="db634b9b-ea9b-4513-b0e5-423e9ded1d83" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="eedcc47b-2567-4bc6-bc63-80efad60b4c3" absoluteBounds="4.375, 2.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ormMinKunstDataContext/Bruker" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96f8469d-22fc-4ae5-b2cf-aaf851645d96" absoluteBounds="4.39, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 3.26044840494792); (2.5 : 3.26044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ormMinKunstDataContext/Bruker/Bruker_Bilde" />
+      <nodes>
+        <classShapeMoniker Id="eedcc47b-2567-4bc6-bc63-80efad60b4c3" />
+        <classShapeMoniker Id="584a1e52-ac06-4aae-92b5-8277d6114b19" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5625 : 4.14589680989583); (4.5625 : 5.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ormMinKunstDataContext/Bruker/Bruker_Kommentar" />
+      <nodes>
+        <classShapeMoniker Id="eedcc47b-2567-4bc6-bc63-80efad60b4c3" />
+        <classShapeMoniker Id="db634b9b-ea9b-4513-b0e5-423e9ded1d83" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

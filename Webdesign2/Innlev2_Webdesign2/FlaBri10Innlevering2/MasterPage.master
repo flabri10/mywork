@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="cphMasterpageHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <link type="text/css" href="Stylesheet.css" rel="Stylesheet"/>
+</head>
+<body>
+<div id="container">
+<form id="form1" runat="server">
+    <div id="header">
+        <h1>MinKunst.no</h1>
+
+        
+        <div id="navTopp">
+            <ul>
+                <li><a href="Bilder.aspx">Bilder</a></li>
+            </ul>
+            <ul>
+                <li><a href="LeggTilBilde.aspx">Legg til bilde</a></li>
+            </ul>
+            <ul>
+                <li><a href="RegistrerDeg.aspx">Registrer deg</a></li>
+            </ul>
+            <ul>
+                <li><a onclick="LoggUt()" href="Logginn.aspx">Logg inn/logg ut</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="hovedInnhold">
+        <asp:ContentPlaceHolder id="cphMasterpage1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+</div>
+</body>
+</html>

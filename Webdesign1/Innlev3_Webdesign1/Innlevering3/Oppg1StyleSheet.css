@@ -1,0 +1,90 @@
+﻿/**Innlevering 3 Webdesign 1 kodet av Britt-Heidi Fladby-Flabri10
+**/
+html, body 
+{
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+#headerBakgrunn
+{
+	height: 115px; 
+	background: url(header-background-short.png);
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#headerBakgrunn #overskrift
+{
+    color: #ffffff; 
+    padding-top: 10px;
+    margin: auto;
+    width: 200px;
+}
+
+#container
+{
+    width: 960px;
+    height: 680px;   
+    margin: auto; 
+}
+
+#container #meny
+{
+    position: absolute;
+    top: 82px;
+    right: 0;
+    width: 300px;
+    height: 30px;
+}
+
+#container #meny ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 30px;
+    float: left;
+}
+
+#container #meny li
+{
+    position: relative;  
+}
+
+#container #meny a
+{
+    background-color: #ffffff;
+    color: Black;
+    text-decoration: none;
+    border-right: 1px;
+    border-right-color: #333333;
+    text-align: center;
+    display: block;
+    height: 30px;
+}
+
+#container #crud
+{
+    position: absolute;
+    right: 40px;
+    top: 40px;    
+}
+
+#container #innhold
+{
+    position: absolute;
+    top: 115px;
+    height: 680px;
+    width: 960px;
+    background-color: #ffffff;
+}
+
+.tabeller
+{
+    position: absolute;
+    left: 40px;    
+}

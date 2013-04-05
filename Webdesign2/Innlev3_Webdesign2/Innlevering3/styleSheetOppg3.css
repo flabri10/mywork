@@ -1,0 +1,44 @@
+/*Innlevering 3 Webdesign 2, kodet av Britt-Heidi Fladby*/
+@charset "utf-8";
+html, body
+{
+	padding: 0;
+	margin: 0;	
+}
+
+#divContainer
+{
+	height: 780px;
+	width: 960px;
+	margin: auto;
+}
+
+#divHeader
+{
+	background-color: #003264;
+	color: #82a8d1;
+	height: 100px;	
+}
+
+h1
+{
+	padding: 30px 10px;	
+}
+
+#divStart
+{
+	width: 300px;
+	margin: auto;
+}
+
+#btnStart
+{
+	background-color: #0032c8;
+	color: #82a8d1;
+	font-size: 36px;
+	width: 300px;
+	height: 60px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 150px;
+}

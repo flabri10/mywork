@@ -1,0 +1,31 @@
+﻿<%-- Innlevering 3 Webdesign 1 kodet av Britt-Heidi Fladby-Flabri10 --%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Oppg2MasterPage.master.cs" Inherits="Oppg2MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Oppgave2</title>
+    <link href="Oppg2StyleSheet.css" type="text/css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form2" runat="server">
+<div id="container">
+    <div id="status" class="roundedCorners">
+        <asp:Label ID="lblStatus" runat="server"></asp:Label>
+    </div>
+    <h1>Sessions</h1>
+    <div id="mainContent">
+        <div id="innhold" class="roundedCorners">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>    
+</div>
+</form>
+</body>
+</html>
+

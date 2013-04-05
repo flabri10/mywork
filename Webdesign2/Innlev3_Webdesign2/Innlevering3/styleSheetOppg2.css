@@ -1,0 +1,68 @@
+/*Innlevering 3 Webdesign 2, kodet av Britt-Heidi Fladby*/
+@charset "utf-8";
+html, body
+{
+	padding: 0;
+	margin: 0;	
+	border: 0;
+}
+
+#container
+{
+	width: 960px;
+	height: 700px;
+	margin: auto;
+}
+
+#header
+{
+	background-color: #323232;
+	color: #ffffff;
+	height: 100px; 	
+	margin-bottom: 7px;
+	margin-top: 0;
+	padding: 0;
+	top:0;
+} 
+
+#header h1
+{
+	padding-top: 30px;
+	padding-left: 5px;	
+}
+
+#mainContent
+{
+	background-color: #646464;
+	width: 500px;
+	height: 400px;	
+	float: left;
+}
+
+#bokinfoWrap
+{
+	width: 440px;
+	height: 500px;	
+	float: right;
+}
+
+#bokInfo
+{
+	background-color: #323232;
+	color: #ffffff;	
+	height: 300px;
+}
+
+#bokInfo img
+{
+	float: left;
+}
+
+#bokOmtale
+{
+	border: 2px;
+	border-color: #646464;
+	height: 150px;	
+	position: absolute;
+	top: 300px;
+}

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Oppgave2</title>
+
+<style type="text/css">
+img
+{
+	position: relative;	
+}
+</style>
+
+<script type="text/javascript">
+<!--
+var grader = 10;
+var cssTekst;
+var interval;
+var ruller = false;
+
+window.onload = init;
+
+function init() {
+    imgHjul = document.getElementById("imgHjul");
+    document.onmouseover = mouseOver;
+    document.onmouseout = mouseOut;
+}
+
+function getTarget(e) {
+    if (e.srcElement) {
+        return e.srcElement;
+    }
+    else {
+        return e.target;
+    }
+}
+
+function mouseOver(e) {
+    if (!e) {
+        var e = window.event;
+    }
+
+    var target = getTarget(e);
+
+    if (target.id == "imgHjul") {
+        startRull();
+    }
+}
+
+function mouseOut(e) {
+    if (!e) {
+        var e = window.event;
+    }
+
+    var target = getTarget(e);
+
+    if(target.id != "imgHjul") {
+        stopp();        
+    }
+}
+
+function startRull() {
+    if(!ruller) {
+        interval = setInterval("rull()", 20);
+        ruller = true;
+    }
+}
+
+function rull(grader) {
+    cssTekst = "-webkit-transform: rotate(" + grader + "deg);";
+}
+
+function fortere() {
+    if (kjører = true) {
+        grader += 20;
+    }
+}
+
+function stopp() {
+    clearInterval(interval);
+    ruller = false;
+}
+//-->
+</script>
+</head>
+<body>
+    <div id="kontrollpanel">
+	    <input type="button" value="Fortere" onclick="fortere()" />
+        <input type="button" value="Stopp" onclick="stopp()"/>
+    </div>
+
+    <img id="imgHjul" src="Bilder/hjul.png" alt="hjul"/>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<kundeliste>
+  <kunde>
+    <kundeId></kundeId>
+    <fornavn></fornavn>
+    <etternavn></etternavn>
+    <epost></epost>
+    <mobil></mobil>
+  </kunde>
+  <kunde>
+    <fornavn>Ola</fornavn>
+    <etternavn>Nordmann</etternavn>
+    <mobil>22332233</mobil>
+    <epost>ola-n@nith.no</epost>
+    <kundeId>1</kundeId>
+    <kundeId />
+  </kunde>
+  <kunde>
+    <fornavn>Kari</fornavn>
+    <etternavn>Hansen</etternavn>
+    <mobil>11223344</mobil>
+    <epost>123@abc.com</epost>
+    <kundeId>1</kundeId>
+    <kundeId />
+  </kunde>
+  <kunde>
+    <fornavn>Hans</fornavn>
+    <etternavn>Hansen</etternavn>
+    <mobil>99889988</mobil>
+    <epost>hhh@123.no</epost>
+    <kundeId>1</kundeId>
+    <kundeId />
+  </kunde>
+</kundeliste>

@@ -1,0 +1,93 @@
+<!--Innlevering 3 Webdesign 2, kodet av Britt-Heidi Fladby-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Oppgave 1</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+<!--
+var viewportwidth;
+var viewportheight;
+var Rfarge;
+var Gfarge;
+var Bfarge;
+var høyde;
+var bredde;
+var positionTopp;
+var positionVenstre;
+var htmltekst = "";
+  
+  
+if (typeof window.innerWidth != 'undefined')
+{
+	viewportwidth = window.innerWidth,
+    viewportheight = window.innerHeight
+}
+  
+
+ 
+else if (typeof document.documentElement != 'undefined'
+    && typeof document.documentElement.clientWidth !=
+    'undefined' && document.documentElement.clientWidth != 0)
+{      
+	viewportwidth = document.documentElement.clientWidth,
+    viewportheight = document.documentElement.clientHeight
+}
+  
+
+else
+{
+	viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+    viewportheight = document.getElementsByTagName('body')[0].clientHeight
+}
+
+function LeggTilBokser(){
+	
+	for (var i = 0; i >= 20; i++){
+		
+		//random farge
+		Rfarge = Math.floor((Math.random()*255)+0);
+		Gfarge = Math.floor((Math.random()*255)+0);
+		Bfarge = Math.floor((Math.random()*255)+0);
+		
+		//random bredde
+		bredde = Math.floor((Math.random()*100)+1);
+		
+		//random høyde
+		høyde = Math.floor((Math.random()*100)+1);
+		
+		//random position top
+		positionTopp = Math.floor((Math.random()* innerHeight )+1);
+		
+		//random position left
+		positionVenstre = Math.floor((Math.random()*innerWidth)+1);
+
+		htmltekst += "<div id='boks[i]' class='divBoks'></div>";	 
+		
+		document.boks[i].cssText = 'background-color: Rfarge Gfarge Bfarge';
+		document.boks[i].cssText = 'width: bredde';
+		document.boks[i].cssText = 'height: høyde';
+		document.boks[i].cssText = 'position: absolute';
+		document.boks[i].cssText = 'top: positionTopp';
+		document.boks[i].cssText = 'left: positionVenstre';
+		
+		document.getElementById("mainContent").innerHTML = htmltekst;	
+	}
+}
+
+$(function(){
+	$(".divBoks").click(function (){
+		$(this).hide("explode", 1000);
+	});
+});
+-->
+</script>
+
+</head>
+
+<body>
+<input type="button" id*="btnLeggTilBokser" value="Legg til bokser" onclick="LeggTilBokser();"/>
+
+</body>
+</html>

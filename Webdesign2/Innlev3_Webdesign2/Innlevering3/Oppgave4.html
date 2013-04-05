@@ -1,0 +1,137 @@
+<!--Innlevering 3 Webdesign 2, kodet av Britt-Heidi Fladby-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Oppgave 4- Lagring av notater</title>
+
+<script type="text/javascript">
+<!--
+var pCookiestatus;
+var txtaOversikt;
+var txtNotat;
+
+window.onload = init;
+
+function init(){
+	pCookiestatus = document.getElementById("pCookiestatus");
+	divNotatoversikt = document.getElementById("divNotatOversikt");
+	txtNotat = document.getElementById("txtNotat");
+	
+	sjekkCookie();	
+	
+	var notatTekst = hentNotat([txtNotat, username]);
+		
+		$('#txtaOppsummering').val(notatTekst);
+}
+
+function sjekkCookie(){
+	if(document.cookie){
+		pCookiestatus.innerHTML = "Cookie finnes!";
+		pCookiestatus.innerHTML += document.cookie;
+		
+		var cookieTabell = document.cookie.split('=');
+		
+		var notat = unescape(cookieTabell[1]);
+		
+		divNotatoversikt.inneHTML += "Notat:" + txtNotat +"</br>";	
+	}
+	else
+	{
+		pCookiestatus.innerHTML = "Cookie finnes ikke!";	
+	}
+}
+
+function lagreCookie(){
+	var dato = new Date();
+	dato.setDate(dato.getDate()+7);
+	
+	document.cookie = "Notat:" + escape(txtNotat.value); + " ;expires= " + dato.toGMTString();	
+	
+	sjekkCookie();
+}
+
+function slettCookie(){
+	var dato = new Date();
+	dato.setDate(dato.getDate()-1);
+	
+	document.cookie = "Notat:;expires=" + dato.toGMTString();
+	
+	sjekkCookie();	
+}
+
+function getCookie(c_name)
+{
+	var i,x,y,ARRcookies=document.cookie.split(";");
+	for (i=0;i<ARRcookies.length;i++)
+	{
+  		x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  		y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  		x=x.replace(/^\s+|\s+$/g,"");
+  	if (x==c_name)
+    {
+    	return unescape(y);
+    }
+  }
+}
+
+function setCookie(c_name,value,exdays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+	document.cookie=c_name + "=" + c_value;
+}
+
+function checkCookie()
+{
+	var username=getCookie("username", "notat");
+	
+	if (username!=null && username!="")
+	{
+		alert("Velkommen igjen, " + username + "!");
+	}
+	else 
+	{
+		username=prompt("Skriv inn navnet ditt:","");
+		notat=promt();
+		
+		if (username!=null && username!="")
+		{
+			setCookie("username",username,365);
+		}
+  	}
+}
+
+function hentNotat(notatTabell){
+	var notatTekst = "";
+	
+	//$('p').each(...
+	
+	$(notatTabell).each(function(i){
+		notatTekst += notatTabell[i] + '\n';
+	});
+	
+	return notatTekst;
+}
+-->
+</script>
+</head>
+<body onload="checkCookie()">
+	<div id="divContainer">
+    	<h1>Notatliste</h1>
+    	<p id="pCookiestatus"></p>
+        <div id="divNotatlagring">
+        	<label>Notat: 
+            	<input id="txtNotat" type="text" />
+            </label>
+            
+            <input type="button" value="Lagre cookie" onclick="lagreCookie()"/>
+            <input type="button" value="Slett cookie" onclick="slettCookie()"/>
+        </div>
+        <div id="divNotatoversikt">
+        	<textarea id="txtaOppsummering" rows="20" cols="10"></textarea>
+        </div>
+    </div>
+</body>
+</html>

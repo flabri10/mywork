@@ -1,0 +1,24 @@
+﻿body 
+{
+    margin: 0;
+    padding : 0;
+}
+
+#container
+{
+    width: 600px;   
+}
+
+#innhold
+{
+    width: 400px;
+    float: left;
+}
+
+#divLoggInnStatus
+{
+    width: 200px;
+    height: 50px;
+    float: right;
+    margin-top: 50px;    
+}

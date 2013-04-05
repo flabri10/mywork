@@ -2,3 +2,8 @@ C:\Users\bhfladby\documents\visual studio 2010\Projects\Innlevering3_flabri10\In
 C:\Users\bhfladby\documents\visual studio 2010\Projects\Innlevering3_flabri10\Innlevering3_flabri10\bin\Innlevering3_flabri10.pdb
 C:\Users\bhfladby\documents\visual studio 2010\Projects\Innlevering3_flabri10\Innlevering3_flabri10\obj\Debug\Innlevering3_flabri10.dll
 C:\Users\bhfladby\documents\visual studio 2010\Projects\Innlevering3_flabri10\Innlevering3_flabri10\obj\Debug\Innlevering3_flabri10.pdb
+C:\Users\bhfladby\mywork\Web 2.0 og Ajax\Innlev3_versjon1\Innlevering3_flabri10_versjon1\Innlevering3_flabri10\bin\Innlevering3_flabri10.dll
+C:\Users\bhfladby\mywork\Web 2.0 og Ajax\Innlev3_versjon1\Innlevering3_flabri10_versjon1\Innlevering3_flabri10\bin\Innlevering3_flabri10.pdb
+C:\Users\bhfladby\mywork\Web 2.0 og Ajax\Innlev3_versjon1\Innlevering3_flabri10_versjon1\Innlevering3_flabri10\obj\Debug\Innlevering3_flabri10.csprojResolveAssemblyReference.cache
+C:\Users\bhfladby\mywork\Web 2.0 og Ajax\Innlev3_versjon1\Innlevering3_flabri10_versjon1\Innlevering3_flabri10\obj\Debug\Innlevering3_flabri10.dll
+C:\Users\bhfladby\mywork\Web 2.0 og Ajax\Innlev3_versjon1\Innlevering3_flabri10_versjon1\Innlevering3_flabri10\obj\Debug\Innlevering3_flabri10.pdb

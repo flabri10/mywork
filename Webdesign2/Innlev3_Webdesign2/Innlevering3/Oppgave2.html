@@ -1,0 +1,82 @@
+<!--Innlevering 3 Webdesign 2, kodet av Britt-Heidi Fladby-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styleSheetOppg2.css" type="text/css" rel="stylesheet" />
+<title>Oppgave 2</title>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+<!--
+var jsonBokinfo = { bøker: [
+	{tittel: "Alef", forfatter: "Paulo Coelho",	beskrivelse: "En åndelig krise fører forfatteren ut på en reise gjennom Afrika, Europa og ender i Asia. På denne reisen møter han den unge fiolinisten Hilal. Sammen lærer de om kjærlighet og tilgivelse, som gir dem mot til å overvinne livets uunngåelige utfordringer. For å spille av innholdet på digikortet kreves en Digispiller."},
+	{tittel: "Nostradamus testamente",	forfatter: "Tom Egeland",	beskrivelse: "En professor kidnappes etter å ha kommet over et brev spåmannen Nostradamus skrev. Brevet er fullt av dødelige koder og religiøse referanser, et brev mange er ute etter, også arkeologen Bjørn Beltø. Dette er den fjerde boka om Bjørn Beltø."},
+	{tittel: "Englemakersken",	forfatter: "Camilla Läckberg",	beskrivelse: "I påska 1974 forsvinner en hel familie sporløst fra Valö utenfor Fjällbacka, 1-åringen Ebba er den eneste som er igjen. Som voksen kommer Ebba tilbake til Valö for å starte pensjonat i barndomshjemmet, og fortidas hemmeligheter kommer til overflaten. Noen forsøker å tenne på huset, og da oppdager man blod under gulvplankene. Dette er den åttende romanen om Patrik Hedström og Erika Falck."},
+	{tittel: "Ildvitnet",	forfatter: "Lars Kepler",	beskrivelse: "Det skjer et mord på Birgittagården, et hjem for tenåringsjenter i trøbbel. Etterforsker Joona Linna skjønner raskt at det er en utfordrende kriminalsak, og sporene fører til Vicky, en stille jente som forsvant fra Birgittagården samme natt som mordet. Når han undersøker bakgrunnen hennes får han seg en overraskelse, og samtidig får politiet en telefon fra det spiritistiske mediet Flora Hansen. Dette er den tredje boka om Joona Linna."},
+	{tittel: "Kane og Abel",	forfatter: "Jeffrey Archer",	beskrivelse: "William Lowell Kane er en millionærsønn fra Boston, mens Abel Rosnovski er en fattig polsk immigrant. De er født på samme dag på hver sin kant av verden, og veiene deres møtes i en nådeløs kamp for å bygge seg en fremtid."},
+	{tittel: "Jenta på klippen",	forfatter: "Lucinda Riley",	beskrivelse: "Grania Ryan forlater samboeren i New York etter at hun har mistet sitt ufødte barn, og søker trøst hos familien i Irland. En dag får hun øye på en liten jente ytterst på en klippe. Jenta, Aurora Lisle, skal komme til å forandre livet hennes. Det viser seg at det er ondt blod mellom familien Ryan og Lisle, etter dramatiske hendelser i fortiden. Og det er Aurora som sørger for å forene de to familiene."},
+	{tittel: "Journal 64",	forfatter: "Jussi Adler-Olsen",	beskrivelse: "Nete Hermansen er en av de 'upassende' kvinnene som ble deportert til den lille øya Sprogø helt fram til 1950-tallet. De blir daglig utsatt for misbruk, tvang og svik. Nete klarer å unnslippe, men den dagen fortiden innhenter henne, starter også en av Avdeling Q\'s mest kompliserte saker. Hva skjedde med Nete, og hva skjedde med folk omkring henne? Den 23 år gamle saken blir gjenåpnet, og samtidig er etterforsker Carl Mørck kommet i en vanskelig situasjon i forbindelse med en drapssak som involverer han personlig. Dette er den fjerde boka om Avdeling Q."},
+	{tittel: "Bølle på døra",	forfatter: "Jennifer Egan",	beskrivelse: "Boka beveger seg fram og tilbake i tid og sted gjennom 40 år, med utgangspunkt i pønkrockens California. Den skildrer et pulserende musikkmiljø som knytter folk sammen, før alt forandrer seg. Sentrale skikkelser er pønkrocker og senere stjerneprodusent Bennie Salazar, og den unge jenta Sasha, som jobber for Bennie og sliter med kleptomani."}
+	]};
+	
+var bildeTabell = ["BokCoverBilder/alef.jpeg", "BokCoverBilder/nostradamusTestamente.jpeg", "BokCoverBilder/englemakersken.jpeg", "BokCoverBilder/ildvitnet.jpeg", "BokCoverBilder/kaneOgAbel.jpeg", "BokCoverBilder/jentaPåKlippen.jpeg", "BokCoverBilder/journal64.jpeg", "BokCoverBilder/bøllePåDøra.jpeg"];
+var cssTekst;
+
+window.onload = init;
+
+function init(){
+	var lengde = bildeTabell.length;
+	var htmltekst = "";
+	
+	for(var i = 0; i < lengde; i++){
+		htmltekst += "<img class='bilde' src='bildeTabell[i]' alt='bokbilde'/>";	 
+	}
+	document.getElementById("mainContent").innerHTML = htmltekst;
+}
+
+function visBokinfo(){
+	$('.bilde').click(
+		function(){
+			$('#bokInfo.bilde').fadeIn();
+			htmltekst += bøker[selectedIndex];	
+		}
+	)
+}
+
+$(function(){
+	$('#btnSkjulVis').hover(
+		function(){
+			$('img:hidden').fadeIn();
+		},
+		function(){
+			$('img:not(:hidden)').fadeOut();
+		}
+	);
+});
+
+function bokliste(){
+	$(document).ready(function(){
+		$("#mainContent img").fadeTo("slow", 0.8);
+		$("#mainContent img").hover(function(){
+			$(this).stop.fadeTo("slow", 1.0); 
+		$("#mainContent img").fadeTo(function(){
+			$(this).stop.fadeTo("slow", 0.8);
+	});
+});
+-->
+</script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+    	<h1>Topp 8 bøker</h1>
+    </div>
+    <div id="mainContent"></div>
+    <div id="bokinfoWrap">
+    	<div id="bokInfo"></div>
+    	<div id="bokOmtale"></div>
+    </div>
+</div>
+</body>
+</html>

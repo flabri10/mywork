@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* CSS Document skrevet av flabri10- Britt-Heidi Fladby */
+html, body
+{
+	margin: 0;
+	padding: 0;	
+	background-color: #FFF;
+}
+
+#container
+{
+	width: 960px;
+	margin: auto;
+	position: relative;
+	background-color: #FFF;
+	top: 0;
+}
+
+#container #header
+{
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 960px;
+}
+
+#container #header #logo 
+{
+	float: left;
+	position: absolute;
+	padding-left: 10px;
+	top: 0;
+	border-style: none;
+}
+
+a img
+{
+	border: 0;	
+}
+
+#container #header #meny
+{
+	width: 550px;
+	height: 30px;
+	position: absolute;
+	top: 90px;
+	left: 450px;
+}
+
+#container #header #meny ul li
+{
+	list-style: none;
+	display: inline;
+}
+
+#container #header #meny ul li a
+{
+	text-decoration: none;	
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right: 1px;
+	border-right-style: solid;
+	border-right-color: #9b9b9b;
+	margin: 0;	
+	color: #9b9b9b;
+	font-family: Comfortaa;
+	font-size: 12pt;
+	background-color: #ffffff;
+	top: 0;
+	left: 100%;
+}
+
+#container #header #meny ul li a:hover
+{
+	color: #ff8c00;
+	border-right-color: #ff8c00;
+}
+
+#menystrek
+{
+	width: 100%;
+	height: 1px;
+	color: #9b9b9b;
+	position: absolute;
+	top: 120px;
+	left: 1px;
+}
+
+#container #panel
+{
+	position: absolute;
+	padding-top: 10px;
+	top: 150px;
+	left: 25px;
+	height: 115px;
+	width: 695px;
+}
+
+#container #panel img
+{
+	position: absolute;
+	top: 0;	
+}
+
+#container #innhold
+{
+	width: 695px;
+	position: absolute;
+	top: 270px;
+	left: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14pt;
+	height: 390px;
+}
+
+#container #innhold #reftekst
+{
+	font-family: Verdana;
+	font-size: 12px;
+	color: #333333;
+	padding-top: 30px;
+}
+
+#container #innhold #refboks
+{
+	height: 240px;
+	width: 695px;
+	margin: 0;
+	boder: 0;
+	padding: 0;
+}
+
+.referanser
+{
+	float: left;
+	width: 230px;
+	height: 80px;
+	padding: 0;
+	margin: 0;	
+	overflow: hidden;
+}
+
+.overskrift
+{
+	font-family: Comfortaa;
+	font-size: 18px;
+	color: #ff8c00;
+	font-style: normal;
+	padding: 0;
+	top: 10px;
+	position: absolute;
+	left: 0px;
+}
+
+#container #innhold a
+{
+	outline: none;	
+}
+
+#container #innhold #bredtekst1
+{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #333333;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#container #innhold #bredtekst2
+{
+	font-family: Verdana;
+	font-size: 18pt;
+	color: #333333;
+	text-align: center;	
+	position: absolute;
+	top: 390px;
+	width: 640px;
+}
+
+#container #innhold #spalte1
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 350px;
+	font-family: Verdana;
+	font-size: 14px;
+	color: #333333;
+	padding-top: 30px;
+}
+
+#container #innhold #spalte2
+{
+	position: absolute;
+	left: 371px;
+	top: 0px;
+	width: 313px;
+	font-family: Verdana;
+	font-size: 14px;
+	color: #333333;
+	height: 400px;
+	padding-top: 0px;
+}
+
+#container #innhold #tjenestetekst1
+{
+	position: absolute;
+	top: 120px;
+}
+
+#container #innhold #tjenestetekst2
+{
+	position: absolute;
+	top: 120px;
+	left: -16px;
+	width: 332px;
+	height: 169px;
+}
+
+#container #innhold #oversiktansatte 
+{
+	position: absolute;
+	height: 400px;
+	width: 322px;
+	left: 0;
+	top: 20px;
+}
+
+#container #innhold #spalte2 #oversiktansatte #ansatt1 #ansatttekst1
+{
+	position: absolute;
+	top: 0;	
+}
+
+#container #innhold #spalte2 #oversiktansatte #ansatt2 #ansatttekst2
+{
+	position: absolute;
+	top: 100px;	
+}
+
+#container #innhold #spalte2 #oversiktansatte #ansatt3 #ansatttekst3
+{
+	position: absolute;
+	top: 200px;	
+}
+
+#container #innhold #spalte2 #oversiktansatte #ansatt4 #ansatttekst4
+{
+	position: absolute;
+	top: 300px;
+}
+
+#container #innhold #oversiktansatte a
+{
+	text-decoration: none;
+	color: #FF8c00;
+}
+
+.ansatt
+{
+	height: 100px;		
+}
+
+.ansattbilder
+{
+	height: 80px;
+	width: 76px;
+}
+
+.ansatttekst
+{
+	position: absolute;
+	text-align: center;
+	left: 109px;
+	width: 180px;
+	padding: 0;
+	height: 80px;
+}
+
+#container #nyheter 
+{
+	width: 210px;
+	height: 460px;
+	position: absolute;
+	top: 150px;
+	right: 10px;
+	font-family: Comfortaa;
+	height: 549px;
+}
+
+#container #nyhetsoverskrift
+{
+	top: 0;
+	left: 0;
+}
+
+#container #nyheter #nyhetstekst
+{
+	font-size: 10pt;
+	color: #333333;
+	font-family: Comfortaa;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+#container #nyheter a
+{
+	font-size: 10pt;
+	color: #ff8c00;
+	position: absolute;
+	left: 143px;
+	top: 358px;
+	text-decoration: none;
+}
+
+#footer
+{
+	width: 100%;
+	height: 110px;
+	background-color: #333333; 
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#footer #footertekst
+{
+	color: #FFF;
+	bottom: 25px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	opacity: 0.5;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	text-align: center;
+}
+
+#footer #medier img a 
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 20px;
+}
